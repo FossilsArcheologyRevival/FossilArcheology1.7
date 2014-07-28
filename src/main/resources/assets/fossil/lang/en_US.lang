@@ -62,7 +62,7 @@ tile.palaeorapheLeaves.name=Palaeoraphe Leaves
 tile.palaeorapheSapling.name=Palaeoraphe Sapling
 tile.palaeoraphePlanks.name=Palaeoraphe Planks
 tile.palaeorapheSlab.name=Palaeoraphe Slab
-tile.palaeorapheSlabDouble.name=Palaeoraphe Double Slab
+tile.palaeorapheSlabDouble.name=Palaeoraphe Slab
 tile.palaeorapheStairs.name=Palaeoraphe Stairs
 tile.volcanicAsh.name=Volcanic Ash
 tile.volcanicRock.name=Volcanic Rock
@@ -83,7 +83,7 @@ tile.figurine.name=Wooden Figurine
 tile.sifter.name=Sifter
 tile.volcanicStairs.name=Volcanic Stairs
 tile.volcanicSlab.name=Volcanic Slab
-tile.volcanicSlabDouble.name=Volcanic Double Slab
+tile.volcanicSlabDouble.name=Volcanic Slab
 
 #Collectables
 tile.figurine.figurine_steve_pristine.name=Pristine Steve Figurine
