@@ -1,0 +1,403 @@
+#Added for 1.7.10 Build 6.3 HEAD1 July 28 2014
+#Russian (ru_RU) Localization File
+
+#Tab Groups
+itemgroup.FArmor=Древняя броня
+itemgroup.FBlocks=Древние блоки
+itemgroup.FCombat=Древнее оружие
+itemgroup.FFood=Древняя еда
+itemgroup.FItems=Древние предметы
+itemgroup.FMaterial=Древние материалы
+itemgroup.FTools=Древние инструменты
+itemgroup.FFigurines=Собираемые предметы
+
+#Achievements
+achievement.FirstEgg=Первый динозавр!
+achievement.AllEggs=Нужно вывести их всех!
+achievement.FoundFossils=Копаем в поисках костей
+achievement.pigBossOnEarth=Привет, Ану
+achievement.Permafrost=Пытаемся не замёрзнуть!
+achievement.ArchWorkbench=Да начнётся вечеринка!
+achievement.Analyzer=Для НАУКИ!
+achievement.CultVat=Генетическая манипуляция.
+achievement.Sifter=Потому что Я - золотой копатель!
+achievement.Dinopedia=Заполняем все страницы!
+achievement.IceAge=Я не знаю, как Вы будете рожать...
+achievement.TheKing=Правитель Позднего мела.
+
+#Achievement Descriptions
+achievement.FirstEgg.desc=Вы вернули Вашего ​​первого динозавра!
+achievement.AllEggs.desc=Вы нашли все яйца динозавров!
+achievement.FoundFossils.desc=Вы нашли немного ископаемых!
+achievement.pigBossOnEarth.desc=Вы призвали Ану!
+achievement.Permafrost=Что может быть внутри этого?
+achievement.ArchWorkbench=Первый шаг в становлении археологом.
+achievement.Analyzer=Открываем прошлое!
+achievement.CultVat=Возвращаем историю к жизни!
+achievement.Sifter=Даже если мне придётся пройти через всю землю!
+achievement.Dinopedia=Найдите всех динозавров!
+achievement.IceAge=Однако Я хочу вернуть ледниковый период!
+achievement.TheKing=Да здравствует король!
+
+#Enchantments
+enchantment.paleontology=Палеонтология
+enchantment.archeology=Археология
+
+#Blocks
+tile.fossil.name=Ископаемое
+tile.skullBlock.name=Череп
+tile.skullLantern.name=Череп-фонарь
+tile.analyzer.name=Анализатор
+tile.cultureVat.name=Чан для разведения
+tile.fossilworkbench.name=Археологический верстак
+tile.fossil_drum.name=Барабан
+tile.feederIdle.name=Кормушка
+tile.feederActive.name=Кормушка
+tile.permafrost.name=Вечная мерзлота
+tile.icedStone.name=Замёрзший камень
+tile.timeMachine.name=Машина времени
+tile.tar.name=Дёготь
+tile.palaeorapheLog.name=Доминиканская древесина
+tile.palaeorapheLeaves.name=Доминиканская листва
+tile.palaeorapheSapling.name=Доминиканский саженец
+tile.palaeoraphePlanks.name=Доминиканские доски
+tile.palaeorapheSlab.name=Доминиканская плита
+tile.palaeorapheSlabDouble.name=Доминиканская плита
+tile.palaeorapheStairs.name=Доминиканские ступеньки
+tile.volcanicAsh.name=Вулканический пепел
+tile.volcanicRock.name=Вулканический камень
+tile.volcanicRockHot.name=Горячий вулканический камень
+tile.sarracina.name=Sarracina
+tile.fernBlock.name=Древний папоротник
+tile.volcanicBrick.name=Вулканический кирпич
+tile.amberOre.name=Янтарная руда
+tile.ancientStone.name=Древний камень
+tile.ancientStonebrick.name=Древний кирпич
+tile.ancientWood.name=Древняя древесина
+tile.ancientWoodPillar.name=Колонна из древней древесины
+tile.ancientGlass.name=Древнее стекло
+tile.ancientWoodPlate.name=Древняя деревянная плита
+tile.ancientWoodStairs.name=Древние деревянные ступеньки
+tile.ancientStoneStairs.name=Древние каменные ступеньки
+tile.figurine.name=Деревянная статуэтка
+tile.sifter.name=Сито
+tile.volcanicStairs.name=Вулканические ступеньки
+tile.volcanicSlab.name=Вулканическая плита
+tile.volcanicSlabDouble.name=Вулканическая плита
+
+#Collectables
+tile.figurine.figurine_steve_pristine.name=Древняя статуэтка Стива
+tile.figurine.figurine_skeleton_pristine.name=Древняя статуэтка скелета
+tile.figurine.figurine_zombie_pristine.name=Древняя статуэтка зомби
+tile.figurine.figurine_pigzombie_pristine.name=Древняя статуэтка странника Края
+tile.figurine.figurine_enderman_pristine.name=Древняя статуэтка зомби-свиночеловека
+tile.figurine.figurine_steve_damaged.name=Повреждённая статуэтка Стива
+tile.figurine.figurine_skeleton_damaged.name=Повреждённая статуэтка скелета
+tile.figurine.figurine_zombie_damaged.name=Повреждённая статуэтка зомби
+tile.figurine.figurine_pigzombie_damaged.name=Повреждённая статуэтка странника Края
+tile.figurine.figurine_enderman_damaged.name=Повреждённая статуэтка зомби-свиночеловека
+tile.figurine.figurine_steve_broken.name=Сломанная статуэтка Стива
+tile.figurine.figurine_skeleton_broken.name=Сломанная статуэтка скелета
+tile.figurine.figurine_zombie_broken.name=Сломанная статуэтка зомби
+tile.figurine.figurine_pigzombie_broken.name=Сломанная статуэтка странника Края
+tile.figurine.figurine_enderman_broken.name=Сломанная статуэтка зомби-свиночеловека
+tile.figurine.figurine_mysterious.name=Таинственная статуэтка
+tile.vaseVolute.damaged_volute.name=Сломанная волюта
+tile.vaseVolute.restored_volute.name=Восстановленная волюта
+tile.vaseVolute.blackFigure_volute.name=Волюта с чёрным рисунком
+tile.vaseVolute.redFigure_volute.name=Волюта с красным рисунком
+tile.vaseVolute.porcelain_volute.name=Фарфоровая волюта
+tile.vaseAmphora.damaged_amphora.name=Сломанная амфора
+tile.vaseAmphora.restored_amphora.name=Восстановленная амфора
+tile.vaseAmphora.blackFigure_amphora.name=Амфора с чёрным рисунком
+tile.vaseAmphora.redFigure_amphora.name=Амфора с красным рисунком
+tile.vaseAmphora.porcelain_amphora.name=Фарфоровая амфора
+tile.vaseKylix.damaged_kylix.name=Сломанный килик
+tile.vaseKylix.restored_kylix.name=Восстановленный килик
+tile.vaseKylix.blackFigure_kylix.name=Килик с чёрным рисунком
+tile.vaseKylix.redFigure_kylix.name=Килик с красным рисунком
+tile.vaseKylix.porcelain_kylix.name=Фарфоровый килик
+
+#Items
+item.bioFossil.name=Биоископаемое
+item.relicScrap.name=Реликтовый кусок
+item.stoneTablet.name=Каменный блокнот
+item.brokenAncientSword.name=Сломанный древний меч
+item.ancientSword.name=Древний меч
+item.fernSeeds.name=Семена папоротника
+item.brokenAncientHelmet.name=Сломанный древний шлем
+item.ancientHelmet.name=Древний шлем
+item.skullStick.name=Череп на палке
+item.scarabGem.name=Жемчужина скарабея
+item.scarabAxe.name=Топор из жемчужины скарабея
+item.scarabPickAxe.name=Кирка из жемчужины скарабея
+item.scarabSword.name=Меч из жемчужины скарабея
+item.scarabHoe.name=Мотыга из жемчужины скарабея
+item.scarabShovel.name=Лопата из жемчужины скарабея
+item.dinoPedia.name=Динопедия
+item.tooth.name=Зуб тираннозавра
+item.dagger.name=Зуб-кинжал
+item.rawChickenSoup.name=Сырой куриный суп
+item.cookedChickenSoup.name=Приготовленный куриный суп
+item.essenceofChicken.name=Эссенция курицы
+item.emptyShell.name=Пустая раковина
+item.sJL.name=Sio-Chiu-Le
+item.icedMeat.name=Замёрзшее мясо
+item.woodJavelin.name=Деревянный дротик
+item.stoneJavelin.name=Каменный дротик
+item.ironJavelin.name=Железный дротик
+item.goldJavelin.name=Золотой дротик
+item.diamondJavelin.name=Алмазный дротик
+item.ancientJavelin.name=Древний дротик
+item.whip.name=Плеть
+item.magicConch.name=Магическая раковина
+item.legBone.name=Кость ноги
+item.claw.name=Коготь
+item.foot.name=Ступня
+item.skull.name=Череп
+item.plantFossil.name=Ископаемое растение
+item.skullHelmet.name=Череп-шлем
+item.ribCage.name=Защита для груди
+item.shinGuards.name=Защита для ног
+item.feet.name=Защита для ступней
+item.amber.name=Янтарь
+item.ancientVase.name=Древняя ваза
+item.ancientVaseBroken.name=Древняя сломанная ваза
+item.boneArrow.name=Костная стрела
+item.boneBow.name=Костный лук
+item.boneGlue.name=Костный клей
+item.boneRod.name=Костная палка
+item.boneSword.name=Костный меч
+item.powderyString.name=Powdery String
+item.animalCoin.name=Монетка животного
+item.dinoCoin.name=Монетка динозавра
+item.dodoWing.name=Сырое крыло дронта
+item.dodoWingCooked.name=Приготовленное крыло дронта
+item.dinoSteak.name=Стейк из динозавра
+item.rawTriceratops.name=Мясо трицератопса
+item.rawVelociraptor.name=Мясо велоцираптора
+item.rawTRex.name=Мясо тираннозавра
+item.rawPterosaur.name=Мясо птерозавра
+item.rawNautilus.name=Мясо наутилуса
+item.rawPlesiosaur.name=Мясо плезиозавра
+item.rawMosasaurus.name=Мясо мозазавра
+item.rawLiopleurodon.name=Мясо лиоплевродона
+item.rawStegosaurus.name=Мясо стегозавра
+item.rawDilophosaurus.name=Мясо дилофозавра
+item.rawBrachiosaurus.name=Мясо брахиозавра
+item.rawSpinosaurus.name=Мясо спинозавра
+item.rawCompsognathus.name=Мясо компсогната
+item.rawAnkylosaurus.name=Мясо анкилозавра
+item.rawPachycephalosaurus.name=Мясо пахицефалозавра
+item.rawDeinonychus.name=Мясо дейнониха
+item.rawGallimimus.name=Мясо галлимима
+item.eggTriceratops.name=Яйцо трицератопса
+item.eggVelociraptor.name=Яйцо велоцираптора
+item.eggTRex.name=Яйцо тираннозавра
+item.eggPterosaur.name=Яйцо птерозавра
+item.eggNautilus.name=Живой наутилус
+item.eggPlesiosaur.name=Яйцо плезиозавра
+item.eggMosasaurus.name=Яйцо мозазавра
+item.eggLiopleurodon.name=Яйцо лиоплевродона
+item.eggStegosaurus.name=Яйцо стегозавра
+item.eggDilophosaurus.name=Яйцо дилофозавра
+item.eggBrachiosaurus.name=Яйцо брахиозавра
+item.eggSpinosaurus.name=Яйцо спинозавра
+item.eggCompsognathus.name=Яйцо компсогната
+item.eggDodo.name=Яйцо дронта
+item.eggCultivatedDodo.name=Развитое яйцо дронта
+item.eggAnkylosaurus.name=Яйцо анкилозавра
+item.eggPachycephalosaurus.name=Яйцо пахицефалозавра
+item.eggDeinonychus.name=Яйцо дейнониха
+item.eggGallimimus.name=Яйцо галлимима
+item.eggCoelacanth.first.name=Океанский целакант
+item.eggCoelacanth.second.name=Речной целакант
+item.eggCoelacanth.third.name=Болотный целакант
+item.dnaTriceratops.name=ДНК трицератопса
+item.dnaVelociraptor.name=ДНК велоцираптора
+item.dnaTRex.name=ДНК тираннозавра
+item.dnaPterosaur.name=ДНК птерозавра
+item.dnaNautilus.name=ДНК наутилуса
+item.dnaPlesiosaur.name=ДНК плезиозавра
+item.dnaMosasaurus.name=ДНК мозазавра
+item.dnaLiopleurodon.name=ДНК лиоплевродона
+item.dnaStegosaurus.name=ДНК стегозавра
+item.dnaDilophosaurus.name=ДНК дилофозавраМ
+item.dnaBrachiosaurus.name=ДНК брахиозавра
+item.dnaSpinosaurus.name=ДНК спинозавра
+item.dnaCompsognathus.name=ДНК компсогната
+item.dnaAnkylosaurus.name=ДНК анкилозавра
+item.dnaPachycephalosaurus.name=ДНК пахицефалозавра
+item.dnaDeinonychus.name=ДНК дейнониха
+item.dnaGallimimus.name=ДНК галлимима
+item.dnaCoelacanth.name=ДНК целаканта
+item.dnaPig.name=ДНК свиньи
+item.dnaSheep.name=ДНК овцы
+item.dnaCow.name=ДНК коровы
+item.dnaChicken.name=ДНК курицы
+item.dnaSmilodon.name=ДНК смилодона
+item.dnaMammoth.name=ДНК мамонта
+item.dnaDodo.name=ДНК дронта
+item.dnaHorse.name=ДНК лошади
+item.dnaQuagga.name=ДНК квагги
+item.embryoPig.name=Эмбрион свиньи
+item.embryoSheep.name=Эмбрион овцы
+item.embryoCow.name=Эмбрион коровы
+item.embryoChicken.name=Эмбрион курицы
+item.embryoSmilodon.name=Эмбрион смилодона
+item.embryoMammoth.name=Эмбрион мамонта
+item.embryoDodo.name=Эмбрион дронта
+item.embryoHorse.name=Эмбрион лошади
+item.embryoQuagga.name=Эмбрион квагги
+item.archNotebook.name=Археологический блокнот
+item.potteryShard.name=Керамический осколок
+
+#Dinosaur related chat messages
+dnaName.head=ДНК 
+dnaName.tail=
+embryoName.head=Эмбрион 
+embryoName.tail=
+meatName.head=Мясо 
+meatName.tail=
+mGCName.head=Магическая раковина: 
+mGCName.tail=
+dEggName.head=Яйцо 
+dEggName.tail=
+
+#Order chat messages
+order.head=Приказ: 
+order.Stay=Стой
+order.Follow=Следуй за мной
+order.FreeMove=Двигайся куда хочешь
+
+#Dinosaur status chat messages
+status.Hungry.head= 
+status.Hungry= голоден.
+status.Starve.head=
+status.Starve= умер от голода.
+status.LearningChest.head=
+status.LearningChest= научился пользоваться сундуками.
+status.Betrayed.head=Этот 
+status.Betrayed= больше не будет доверять человеку.
+status.NoSpace.head=
+status.NoSpace= не имеет достаточно места для роста.
+status.StarveEsc.head=
+status.StarveEsc= сбежал, потому что был голоден.
+status.SJLBite= bit the Siu-Jiu-Le and ran away.
+status.ChewTime= needs time to chew.
+status.Full.head= This 
+status.Full= is full.
+status.Nervous.Head=You made the little 
+status.Nervous= too nervous to hunt itself.
+status.GemErrorYoung=Этот тираннозавр ещё слишком молод.
+status.GemErrorHealth=Скарабей не может позволить себе такую ​​сильную жизненную энергию.
+status.GemErrorTamed=Этот тираннозавр уже был приручен.
+status.essencefail=Эссенция курицы не имеет эффекта.
+
+#Dinosaur Names
+entity.fossil.Triceratops.name=Трицератопс
+entity.fossil.Velociraptor.name=Велоцираптор
+entity.fossil.TRex.name=Тираннозавр
+entity.fossil.Pterosaur.name=Птерозавр
+entity.fossil.Plesiosaur.name=Плезиозавр
+entity.fossil.Mosasaurus.name=Мозазавр
+entity.fossil.Liopleurodon.name=Лиоплевродон
+entity.fossil.Stegosaurus.name=Стегозавр
+entity.fossil.Dilophosaurus.name=Дилофозавр
+entity.fossil.Brachiosaurus.name=Брахиозавр
+entity.fossil.Nautilus.name=Наутилус
+entity.fossil.Spinosaurus.name=Спинозавр
+entity.fossil.Compsognathus.name=Компсогнат
+entity.fossil.Ankylosaurus.name=Анкилозавр
+entity.fossil.Pachycephalosaurus.name=Пахицефалозавр
+entity.fossil.Deinonychus.name=Дейноних
+entity.fossil.Gallimimus.name=Галлимим
+
+#Non-dinosaur names
+entity.fossil.Mammoth.name=Мамонт
+entity.fossil.Smilodon.name=Смилодон
+entity.fossil.PregnantCow.name=Беременная корова
+entity.fossil.PregnantPig.name=Беременная свинья
+entity.fossil.PregnantSheep.name=Беременная овца
+entity.fossil.PregnantHorse.name=Беременная лошадь
+entity.fossil.Dodo.name=Дронт
+entity.fossil.Coelacanth.name=Целакант
+entity.fossil.Quagga.name=Квагга
+
+#Pedia text
+pedia.text.owner=Владелец:
+pedia.text.chest=* сундуки
+pedia.text.caution=!Опасный!
+pedia.text.rideable=* можно оседлать
+pedia.text.weak=Почти умер
+pedia.text.fly=* может летать
+pedia.eggWet=Влажное
+pedia.eggDry=Сухое
+pedia.eggCold=Холодное
+pedia.eggWarm=Тёплое
+pedia.eggStatus=Статус
+pedia.eggProgress=Прогресс
+pedia.eggDay=День
+pedia.eggDays=Дни
+pedia.embryo.inside=Эмбрион в:
+pedia.embryo.growing=Прогресс:
+pedia.embryo.Pig=Свинья
+pedia.embryo.Sheep=Овца
+pedia.embryo.Cow=Корова
+pedia.embryo.Chicken=Курица
+pedia.embryo.Smilodon=Смилодон
+pedia.embryo.Mammoth=Мамонт
+pedia.embryo.Dodo=Дронт
+pedia.embryo.Horse=Лошадь
+pedia.embryo.Quagga=Квагга
+
+#Anu speaking lines
+anuSpeaker.self=Ану: 
+anuSpeaker.hello=Встань на колени передо мной, сопротивление бесполезно.
+anuSpeaker.bareHand=Голые руки... Глупый, но храбрый.
+anuSpeaker.draw=ДОСТАВАЙ СВОЙ МЕЧ.
+anuSpeaker.coward=Лук для трусов! Хватит прятаться!
+anuSpeaker.leartHere=Look what I learned from here!
+anuSpeaker.leartThere=Look what I learned from there!
+anuSpeaker.unknownRanged=Что ж, это твоё оружие?
+anuSpeaker.unknownMelee=Ха! Хватит играть!
+anuSpeaker.summon=Слуги, Ваш Мастер взывает.
+anuSpeaker.trans=Brutes, wake up your wisdom.
+anuSpeaker.qi=Qi-shock!
+anuSpeaker.fireRain=Lets rain some fire!
+
+#Friendly pigmen speaking lines
+fpzSpeaker.self=Свинозомби: 
+fpzSpeaker.selfKill=Мы не можем жить без лидера!
+fpzSpeaker.lifeFor.head=Моя жизнь для 
+fpzSpeaker.lifeFor.tail=!
+fpzSpeaker.anuSommon=Все зовём Ану!!
+
+#Dinosaur egg chat messages
+dinoegg.hatched=Яйцо динозавра вылупилось!
+dinoegg.noSpace=Это яйцо не может быть выведено здесь.
+dinoegg.head=Яйцо 
+dinoegg.dry= умерло, потому что оно было слишком сухим.	
+dinoegg.cold= умерло, потому что оно было слишком холодным.
+
+#Cultivator chat messages
+cultivate.outBreak=Внимание! Культивирование не удалось!
+
+#Drum chat messages
+drum.trigger=Приказ барабана: 
+drum.ordering=Приказ 
+drum.tRex1=Призываем тираннозавра к завтраку.
+drum.tRex2=Призываем тираннозавра к обеду.
+drum.tRex3=Призываем тираннозавра к ужину.
+
+#Hostile mob names
+entity.fossil.Bones.name=Кости
+entity.fossil.FriendlyPigZombie.name=Дружелюбные свинозомби
+entity.fossil.Failuresaurus.name=Failursaurus
+entity.fossil.PigBoss.name=Ану
+
+#Records
+item.record_bones.name=Ископаемая пластинка
+item.record_jp_theme.name=Тема JP
+item.record_bones_disc.name=Ископаемая пластинка
+item.record.record_bones_disc.desc=WhiteJoshMan - Кости
