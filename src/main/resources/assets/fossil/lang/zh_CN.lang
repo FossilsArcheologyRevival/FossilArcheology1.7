@@ -1,4 +1,4 @@
-#Updated for 1.7.10 Build 6.3  HEAD18 July 25 2014 
+#Updated for 1.7.10 Build 6.3  HEAD18 August 9 2014 
 #Simplified Chinese (zh_CN) Localization File
 
 #创造模式标签
@@ -9,7 +9,7 @@ itemgroup.FFood=古代食物
 itemgroup.FItems=古代物品
 itemgroup.FMaterial=古代材料
 itemgroup.FTools=古代工具
-itemgroup.FFigurines=Collectables
+itemgroup.FFigurines=雕像收集
 
 #Achievements
 achievement.FirstEgg=第一只恐龙!
@@ -40,8 +40,8 @@ achievement.IceAge=但是我想要冰河时代回来!
 achievement.TheKing=国王万岁!
 
 #Enchantments
-enchantment.paleontology=Paleontology
-enchantment.archeology=Archeology
+enchantment.paleontology=古生物学
+enchantment.archeology=考古学
 
 #方块
 tile.fossil.name=化石
@@ -81,42 +81,42 @@ tile.ancientWoodStairs.name=古代木头楼梯
 tile.ancientStoneStairs.name=古代石头楼梯
 tile.figurine.name=木质雕像
 tile.sifter.name=筛子
-tile.volcanicStairs.name=Volcanic Stairs
-tile.volcanicSlab.name=Volcanic Slab
-tile.volcanicSlabDouble.name=Volcanic Double Slab
+tile.volcanicStairs.name=火山岩楼梯
+tile.volcanicSlab.name=火山岩台阶
+tile.volcanicSlabDouble.name=火山岩双层台阶
 
 #Collectables
-tile.figurine.figurine_steve_pristine.name=Pristine Steve Figurine
-tile.figurine.figurine_skeleton_pristine.name=Pristine Skeleton Figurine
-tile.figurine.figurine_zombie_pristine.name=Pristine Zombie Figurine
-tile.figurine.figurine_pigzombie_pristine.name=Pristine Enderman Figurine
-tile.figurine.figurine_enderman_pristine.name=Pristine Zombie Pigman Figurine
-tile.figurine.figurine_steve_damaged.name=Damaged Steve Figurine
-tile.figurine.figurine_skeleton_damaged.name=Damaged Skeleton Figurine
-tile.figurine.figurine_zombie_damaged.name=Damaged Zombie Figurine
-tile.figurine.figurine_pigzombie_damaged.name=Damaged Enderman Figurine
-tile.figurine.figurine_enderman_damaged.name=Damaged Zombie Pigman Figurine
-tile.figurine.figurine_steve_broken.name=Broken Steve Figurine
-tile.figurine.figurine_skeleton_broken.name=Broken Skeleton Figurine
-tile.figurine.figurine_zombie_broken.name=Broken Zombie Figurine
-tile.figurine.figurine_pigzombie_broken.name=Broken Enderman Figurine
-tile.figurine.figurine_enderman_broken.name=Broken Zombie Pigman Figurine
-tile.figurine.figurine_mysterious.name=Mysterious Figurine
-tile.vaseVolute.damaged_volute.name=Broken Volute
-tile.vaseVolute.restored_volute.name=Restored Volute
-tile.vaseVolute.blackFigure_volute.name=Black Figure Volute
-tile.vaseVolute.redFigure_volute.name=Red Figure Volute
-tile.vaseVolute.porcelain_volute.name=Porcelain Volute
-tile.vaseAmphora.damaged_amphora.name=Broken Amphora
-tile.vaseAmphora.restored_amphora.name=Restored Amphora
-tile.vaseAmphora.blackFigure_amphora.name=Black Figure Amphora
-tile.vaseAmphora.redFigure_amphora.name=Red Figure Amphora
-tile.vaseAmphora.porcelain_amphora.name=Porcelain Amphora
-tile.vaseKylix.damaged_kylix.name=Broken Kylix
-tile.vaseKylix.restored_kylix.name=Restored Kylix
-tile.vaseKylix.blackFigure_kylix.name=Black Figure Kylix
-tile.vaseKylix.redFigure_kylix.name=Red Figure Kylix
-tile.vaseKylix.porcelain_kylix.name=Porcelain Kylix
+tile.figurine.figurine_steve_pristine.name=质朴史蒂夫雕像
+tile.figurine.figurine_skeleton_pristine.name=质朴骷髅雕像
+tile.figurine.figurine_zombie_pristine.name=质朴僵尸雕像
+tile.figurine.figurine_pigzombie_pristine.name=质朴末影人雕像
+tile.figurine.figurine_enderman_pristine.name=质朴僵尸猪人雕像
+tile.figurine.figurine_steve_damaged.name=破损史蒂夫雕像
+tile.figurine.figurine_skeleton_damaged.name=破损骷髅雕像
+tile.figurine.figurine_zombie_damaged.name=破损僵尸雕像
+tile.figurine.figurine_pigzombie_damaged.name=破损末影人雕像
+tile.figurine.figurine_enderman_damaged.name=破损僵尸猪人雕像
+tile.figurine.figurine_steve_broken.name=碎裂史蒂夫雕像
+tile.figurine.figurine_skeleton_broken.name=碎裂骷髅雕像
+tile.figurine.figurine_zombie_broken.name=碎裂僵尸雕像
+tile.figurine.figurine_pigzombie_broken.name=碎裂末影人雕像
+tile.figurine.figurine_enderman_broken.name=碎裂僵尸猪人雕像
+tile.figurine.figurine_mysterious.name=神秘雕像
+tile.vaseVolute.damaged_volute.name=碎裂蜗壳
+tile.vaseVolute.restored_volute.name=修复蜗壳
+tile.vaseVolute.blackFigure_volute.name=黑纹蜗壳
+tile.vaseVolute.redFigure_volute.name=红纹蜗壳
+tile.vaseVolute.porcelain_volute.name=质朴蜗壳
+tile.vaseAmphora.damaged_amphora.name=碎裂双耳陶罐
+tile.vaseAmphora.restored_amphora.name=修复双耳陶罐
+tile.vaseAmphora.blackFigure_amphora.name=黑纹双耳陶罐
+tile.vaseAmphora.redFigure_amphora.name=红纹双耳陶罐
+tile.vaseAmphora.porcelain_amphora.name=质朴双耳陶罐
+tile.vaseKylix.damaged_kylix.name=碎裂基里克斯陶杯
+tile.vaseKylix.restored_kylix.name=修复基里克斯陶杯
+tile.vaseKylix.blackFigure_kylix.name=黑纹基里克斯陶杯
+tile.vaseKylix.redFigure_kylix.name=红纹基里克斯陶杯
+tile.vaseKylix.porcelain_kylix.name=质朴基里克斯陶杯
 
 #物品
 item.bioFossil.name=活体化石
@@ -172,7 +172,7 @@ item.powderyString.name=粉化丝线
 item.animalCoin.name=动物硬币
 item.dinoCoin.name=恐龙硬币
 item.dodoWing.name=生渡渡鸟翅膀
-item.dodoWingCooked.name=烤渡渡鸟翅膀
+item.dodoWingCooked.name=渡渡鸟烤翅
 item.dinoSteak.name=恐龙肉排
 item.rawTriceratops.name=三角龙肉
 item.rawVelociraptor.name=迅猛龙肉
@@ -181,7 +181,7 @@ item.rawPterosaur.name=翼龙肉
 item.rawNautilus.name=鹦鹉螺肉
 item.rawPlesiosaur.name=蛇颈龙肉
 item.rawMosasaurus.name=沧龙肉
-item.rawLiopleurodon.name=Raw Liopleurodon
+item.rawLiopleurodon.name=滑齿龙肉
 item.rawStegosaurus.name=剑龙肉
 item.rawDilophosaurus.name=双脊龙肉
 item.rawBrachiosaurus.name=腕龙肉
@@ -198,7 +198,7 @@ item.eggPterosaur.name=翼龙蛋
 item.eggNautilus.name=活体鹦鹉螺
 item.eggPlesiosaur.name=蛇颈龙蛋
 item.eggMosasaurus.name=沧龙蛋
-item.eggLiopleurodon.name=Liopleurodon Egg
+item.eggLiopleurodon.name=滑齿龙蛋
 item.eggStegosaurus.name=剑龙蛋
 item.eggDilophosaurus.name=双脊龙蛋
 item.eggBrachiosaurus.name=腕龙蛋
@@ -210,9 +210,9 @@ item.eggAnkylosaurus.name=背甲龙蛋
 item.eggPachycephalosaurus.name=肿头龙蛋
 item.eggDeinonychus.name=恐爪龙蛋
 item.eggGallimimus.name=似鸡龙蛋
-item.eggCoelacanth.first.name=Ocean Coelacanth
-item.eggCoelacanth.second.name=River Coelacanth
-item.eggCoelacanth.third.name=Swamp Coelacanth
+item.eggCoelacanth.first.name=海生腔棘鱼
+item.eggCoelacanth.second.name=河生腔棘鱼
+item.eggCoelacanth.third.name=沼泽腔棘鱼
 item.dnaTriceratops.name=三角龙DNA
 item.dnaVelociraptor.name=迅猛龙DNA
 item.dnaTRex.name=霸王龙DNA
@@ -220,7 +220,7 @@ item.dnaPterosaur.name=翼龙DNA
 item.dnaNautilus.name=鹦鹉螺DNA
 item.dnaPlesiosaur.name=蛇颈龙DNA
 item.dnaMosasaurus.name=沧龙DNA
-item.dnaLiopleurodon.name=Liopleurodon DNA
+item.dnaLiopleurodon.name=滑齿龙DNA
 item.dnaStegosaurus.name=剑龙DNA
 item.dnaDilophosaurus.name=双脊龙DNA
 item.dnaBrachiosaurus.name=腕龙DNA
@@ -247,8 +247,8 @@ item.embryoChicken.name=鸡胚胎
 item.embryoSmilodon.name=剑齿虎胚胎
 item.embryoMammoth.name=猛犸象胚胎
 item.embryoDodo.name=渡渡鸟胚胎
-item.embryoHorse.name=Horse Embryo
-item.embryoQuagga.name=Quagga Embryo
+item.embryoHorse.name=骂胚胎
+item.embryoQuagga.name=斑驴胚胎
 item.archNotebook.name=考古手册
 item.potteryShard.name=陶片
 
@@ -301,7 +301,7 @@ entity.fossil.TRex.name=霸王龙
 entity.fossil.Pterosaur.name=翼龙
 entity.fossil.Plesiosaur.name=蛇颈龙
 entity.fossil.Mosasaurus.name=沧龙
-entity.fossil.Liopleurodon.name=Liopleurodon
+entity.fossil.Liopleurodon.name=滑齿龙
 entity.fossil.Stegosaurus.name=剑龙
 entity.fossil.Dilophosaurus.name=双脊龙
 entity.fossil.Brachiosaurus.name=腕龙
@@ -319,10 +319,10 @@ entity.fossil.Smilodon.name=剑齿虎
 entity.fossil.PregnantCow.name=受孕牛
 entity.fossil.PregnantPig.name=受孕猪
 entity.fossil.PregnantSheep.name=受孕羊
-entity.fossil.PregnantHorse.name=Pregnant Horse
+entity.fossil.PregnantHorse.name=受孕马
 entity.fossil.Dodo.name=渡渡鸟
 entity.fossil.Coelacanth.name=腔棘鱼
-entity.fossil.Quagga.name=Quagga
+entity.fossil.Quagga.name=斑驴
 
 #百科文本.恐龙信息.
 pedia.text.owner=主人:
@@ -348,8 +348,8 @@ pedia.embryo.Chicken=鸡
 pedia.embryo.Smilodon=剑齿虎
 pedia.embryo.Mammoth=猛犸象
 pedia.embryo.Dodo=渡渡鸟
-pedia.embryo.Horse=Horse
-pedia.embryo.Quagga=Quagga
+pedia.embryo.Horse=马
+pedia.embryo.Quagga=斑驴
 
 #阿努对白
 anuSpeaker.self=阿努: 
@@ -400,4 +400,4 @@ entity.fossil.PigBoss.name=阿努
 item.record_bones.name=化石唱片
 item.record_jp_theme.name=和风主题唱片
 item.record_bones_disc.name=化石唱片
-item.record.record_bones_disc.desc=WhiteJoshMan - Bones
+item.record.record_bones_disc.desc=WhiteJoshMan-骨之唱片
