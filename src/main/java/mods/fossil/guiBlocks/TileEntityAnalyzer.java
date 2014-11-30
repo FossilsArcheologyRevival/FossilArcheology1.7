@@ -286,7 +286,8 @@ public class TileEntityAnalyzer extends TileEntity implements IInventory, ISided
                 		|| (var2 == Items.leather)
                 		|| (var2 == Fossil.dodoWing)
                 		|| (var2 == Fossil.terrorBirdMeat)
-                		|| (var2 == Fossil.quaggaMeat))
+                		|| (var2 == Fossil.quaggaMeat)
+                		|| (var2 == Fossil.amber))
                 {
                     this.RawIndex = var1;
                     break;
@@ -320,7 +321,46 @@ public class TileEntityAnalyzer extends TileEntity implements IInventory, ISided
             ItemStack itemstack = null;
             int rand = (new Random()).nextInt(100);
             int var3;
+	    if (this.analyzerItemStacks[this.RawIndex].getItem() == Fossil.amber)
+            {
+                if (rand < 1)
+                {
+                    itemstack = new ItemStack(Fossil.brokenSapling, 1);
+                }
 
+                if (rand > 1 && rand <= 45)
+                {
+                    itemstack = new ItemStack(Items.wheat_seeds, 3, 15);
+                }
+
+                if (rand > 45 && rand <= 80)
+                {
+                    itemstack = new ItemStack(Blocks.sand, 3);
+                }
+
+                if (rand > 85 && rand <= 90)
+                {
+                    itemstack = new ItemStack(Fossil.fernSeed, 3);
+                }
+
+                if (rand > 85)
+                {
+                    int i = (new Random()).nextInt(EnumDinoType.values().length + 2); //+1 for the sapling, +2 for coelacanth
+                    Item i0 = null;
+
+                    if (i == 0)
+                    {
+                        i0 = Fossil.brokenSapling;
+                    }
+                    
+                    else
+                    {
+                        i0 = EnumDinoType.values()[i - 2].DNAItem;
+                    }
+
+                    itemstack = new ItemStack(i0, 1);
+                }
+            }
             if (this.analyzerItemStacks[this.RawIndex].getItem() == Fossil.biofossil)
             {
                 if (rand < 1)
