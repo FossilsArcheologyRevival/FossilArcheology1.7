@@ -789,7 +789,7 @@ public class EntityDinoEgg extends Entity implements IEntityAdditionalSpawnData
 							|| BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.WASTELAND)
 							|| BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.SPOOKY))
 					{
-						((EntitySarcosuchus)var5).setSubSpecies(1); //desert
+						((EntitySarcosuchus)var5).setSubSpecies(2); //desert
 					}
 					else if (BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.JUNGLE)
 							|| BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.MAGICAL)
@@ -797,7 +797,7 @@ public class EntityDinoEgg extends Entity implements IEntityAdditionalSpawnData
 							|| BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.DENSE)
 							|| BiomeDictionary.isBiomeOfType(var3, BiomeDictionary.Type.LUSH))
 					{
-						((EntitySarcosuchus)var5).setSubSpecies(2); //swamp
+						((EntitySarcosuchus)var5).setSubSpecies(1); //swamp
 					}else{
 						((EntitySarcosuchus)var5).setSubSpecies(0); 
 
