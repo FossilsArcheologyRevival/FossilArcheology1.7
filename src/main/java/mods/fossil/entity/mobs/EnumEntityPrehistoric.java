@@ -2,6 +2,7 @@ package mods.fossil.entity.mobs;
 
 import java.util.ArrayList;
 
+import mods.fossil.entity.mob.EntityAllosaurus;
 import mods.fossil.entity.mob.EntityAnkylosaurus;
 import mods.fossil.entity.mob.EntityBrachiosaurus;
 import mods.fossil.entity.mob.EntityCompsognathus;
@@ -14,6 +15,7 @@ import mods.fossil.entity.mob.EntityNautilus;
 import mods.fossil.entity.mob.EntityPachycephalosaurus;
 import mods.fossil.entity.mob.EntityPlesiosaur;
 import mods.fossil.entity.mob.EntityPterosaur;
+import mods.fossil.entity.mob.EntitySarcosuchus;
 import mods.fossil.entity.mob.EntitySpinosaurus;
 import mods.fossil.entity.mob.EntityStegosaurus;
 import mods.fossil.entity.mob.EntityTRex;
@@ -38,6 +40,7 @@ public enum EnumEntityPrehistoric {
 	Pachycephalosaurus(EntityPachycephalosaurus.class, true, false, true, true, true, 1),
 	Plesiosaur(EntityPlesiosaur.class, true, true, true, true, true, 0),
 	Pterosaur(EntityPterosaur.class, true, false, true, true, true, 0),
+	Sarcosuchus(EntitySarcosuchus.class, true, true, false, true, true, 0),
 	Spinosaurus(EntitySpinosaurus.class, true, false, true, false, true, 0),
 	Stegosaurus(EntityStegosaurus.class, true, false, true, true, false, 1),
 	Triceratops(EntityTriceratops.class, true, true, true, true, true, 1),
