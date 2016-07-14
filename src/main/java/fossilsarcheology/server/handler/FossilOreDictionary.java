@@ -34,7 +34,6 @@ public class FossilOreDictionary {
         OreDictionary.registerOre("skull", new ItemStack(FABlockRegistry.INSTANCE.blockSkull));
         OreDictionary.registerOre("denseSand", new ItemStack(FABlockRegistry.INSTANCE.denseSand));
         OreDictionary.registerOre("skullLantern", new ItemStack(FABlockRegistry.INSTANCE.skullLantern));
-        OreDictionary.registerOre("chest", new ItemStack(FABlockRegistry.INSTANCE.ancientChest));
         OreDictionary.registerOre("stoneAncient", new ItemStack(FABlockRegistry.INSTANCE.ancientStone));
         OreDictionary.registerOre("stoneAncientBrick", new ItemStack(FABlockRegistry.INSTANCE.ancientStonebrick));
         OreDictionary.registerOre("stone", new ItemStack(FABlockRegistry.INSTANCE.ancientStone));
