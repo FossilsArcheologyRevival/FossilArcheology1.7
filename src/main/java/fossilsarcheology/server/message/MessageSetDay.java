@@ -13,42 +13,42 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class MessageSetDay extends AbstractMessage<MessageSetDay> {
 
-    public int dinosaurID;
-    public boolean isDay;
+	public int dinosaurID;
+	public boolean isDay;
 
-    public MessageSetDay(int dinosaurID, boolean isDay) {
-        this.dinosaurID = dinosaurID;
-        this.isDay = isDay;
-    }
+	public MessageSetDay(int dinosaurID, boolean isDay) {
+		this.dinosaurID = dinosaurID;
+		this.isDay = isDay;
+	}
 
-    public MessageSetDay() {
-    }
+	public MessageSetDay() {
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void onClientReceived(Minecraft client, MessageSetDay message, EntityPlayer player, MessageContext messageContext) {
-        Entity entity = player.world.getEntityByID(message.dinosaurID);
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void onClientReceived(Minecraft client, MessageSetDay message, EntityPlayer player, MessageContext messageContext) {
+		Entity entity = player.world.getEntityByID(message.dinosaurID);
 
-        if (entity instanceof EntityPrehistoric) {
-            EntityPrehistoric prehistoric = (EntityPrehistoric) entity;
-            prehistoric.isDaytime = message.isDay;
-        }
-    }
+		if (entity instanceof EntityPrehistoric) {
+			EntityPrehistoric prehistoric = (EntityPrehistoric) entity;
+			prehistoric.isDaytime = message.isDay;
+		}
+	}
 
-    @Override
-    public void onServerReceived(MinecraftServer server, MessageSetDay message, EntityPlayer player, MessageContext messageContext) {
-    }
+	@Override
+	public void onServerReceived(MinecraftServer server, MessageSetDay message, EntityPlayer player, MessageContext messageContext) {
+	}
 
-    @Override
-    public void fromBytes(ByteBuf buf) {
-        dinosaurID = buf.readInt();
-        isDay = buf.readBoolean();
+	@Override
+	public void fromBytes(ByteBuf buf) {
+		dinosaurID = buf.readInt();
+		isDay = buf.readBoolean();
 
-    }
+	}
 
-    @Override
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(dinosaurID);
-        buf.writeBoolean(isDay);
-    }
+	@Override
+	public void toBytes(ByteBuf buf) {
+		buf.writeInt(dinosaurID);
+		buf.writeBoolean(isDay);
+	}
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "fossil:blocks/ancient_wood_pillar"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fossil:blocks/ancient_wood_pillar"
+  }
 }

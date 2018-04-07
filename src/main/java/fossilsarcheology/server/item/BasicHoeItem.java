@@ -6,9 +6,9 @@ import net.minecraft.item.ItemHoe;
 
 public class BasicHoeItem extends ItemHoe implements DefaultRenderedItem {
 
-    public BasicHoeItem(ToolMaterial toolmaterial, String name) {
-        super(toolmaterial);
-        this.setUnlocalizedName(name);
-        this.setCreativeTab(FATabRegistry.ITEMS);
-    }
+	public BasicHoeItem(ToolMaterial toolmaterial, String name) {
+		super(toolmaterial);
+		this.setUnlocalizedName(name);
+		this.setCreativeTab(FATabRegistry.ITEMS);
+	}
 }

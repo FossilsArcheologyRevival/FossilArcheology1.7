@@ -7,10 +7,10 @@ import net.minecraft.item.ItemArmor;
 
 public class BasicArmorItem extends ItemArmor implements DefaultRenderedItem {
 
-    public BasicArmorItem(ArmorMaterial material, int renderIndex, EntityEquipmentSlot slot, String name) {
-        super(material, renderIndex, slot);
-        this.setCreativeTab(FATabRegistry.ITEMS);
-        this.setUnlocalizedName(name);
-    }
+	public BasicArmorItem(ArmorMaterial material, int renderIndex, EntityEquipmentSlot slot, String name) {
+		super(material, renderIndex, slot);
+		this.setCreativeTab(FATabRegistry.ITEMS);
+		this.setUnlocalizedName(name);
+	}
 }
 

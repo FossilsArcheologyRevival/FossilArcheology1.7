@@ -1,10 +1,10 @@
 {
-    "parent": "fossil:block/orientable2",
-    "textures": {
-        "top": "fossil:blocks/arch_table_top_idle",
-        "front": "fossil:blocks/arch_table_side1",
-        "side": "fossil:blocks/arch_table_side2",
-        "back": "fossil:blocks/arch_table_side1",
-        "bottom": "fossil:blocks/arch_table_bottom"
-    }
+  "parent": "fossil:block/orientable2",
+  "textures": {
+    "top": "fossil:blocks/arch_table_top_idle",
+    "front": "fossil:blocks/arch_table_side1",
+    "side": "fossil:blocks/arch_table_side2",
+    "back": "fossil:blocks/arch_table_side1",
+    "bottom": "fossil:blocks/arch_table_bottom"
+  }
 }

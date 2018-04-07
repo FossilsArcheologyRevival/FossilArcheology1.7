@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
-    "textures": {
-        "particle": "fossil:blocks/sifter_top",
-        "down": "fossil:blocks/sifter_bottom",
-        "up": "fossil:blocks/sifter_top",
-        "north": "fossil:blocks/sifter_side",
-        "east": "fossil:blocks/sifter_side",
-        "south": "fossil:blocks/sifter_side",
-        "west": "fossil:blocks/sifter_side"
-    }
+  "parent": "block/cube",
+  "textures": {
+    "particle": "fossil:blocks/sifter_top",
+    "down": "fossil:blocks/sifter_bottom",
+    "up": "fossil:blocks/sifter_top",
+    "north": "fossil:blocks/sifter_side",
+    "east": "fossil:blocks/sifter_side",
+    "south": "fossil:blocks/sifter_side",
+    "west": "fossil:blocks/sifter_side"
+  }
 }

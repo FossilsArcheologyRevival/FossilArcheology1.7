@@ -1,8 +1,19 @@
 {
   "variants": {
-    "facing=north": { "model": "fossil:worktable" },
-    "facing=south": { "model": "fossil:worktable", "y": 180 },
-    "facing=west":  { "model": "fossil:worktable", "y": 270 },
-    "facing=east":  { "model": "fossil:worktable", "y": 90 }
+    "facing=north": {
+      "model": "fossil:worktable"
+    },
+    "facing=south": {
+      "model": "fossil:worktable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fossil:worktable",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "fossil:worktable",
+      "y": 90
+    }
   }
 }

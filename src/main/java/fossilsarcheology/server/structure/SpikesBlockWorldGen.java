@@ -8,8 +8,8 @@ import java.util.Random;
 
 public class SpikesBlockWorldGen extends WorldGenerator {
 
-    @Override
-    public boolean generate(World worldIn, Random rand, BlockPos position) {
-        return false;
-    }
+	@Override
+	public boolean generate(World worldIn, Random rand, BlockPos position) {
+		return false;
+	}
 }

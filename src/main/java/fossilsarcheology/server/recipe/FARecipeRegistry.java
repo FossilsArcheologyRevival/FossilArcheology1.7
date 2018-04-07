@@ -1,27 +1,14 @@
 package fossilsarcheology.server.recipe;
 
-import fossilsarcheology.server.block.FABlockRegistry;
-import fossilsarcheology.server.entity.prehistoric.MobType;
-import fossilsarcheology.server.entity.prehistoric.PrehistoricEntityType;
-import fossilsarcheology.server.item.FAItemRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.OreDictionary;
-import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
-import net.minecraftforge.registries.IForgeRegistryEntry;
 
 public class FARecipeRegistry {
 
-    public static String[] dyes = {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGray", "Gray", "Pink", "Lime", "Yellow", "LightBlue", "Magenta", "Orange", "White"};
+	public static String[] dyes = {"Black", "Red", "Green", "Brown", "Blue", "Purple", "Cyan", "LightGray", "Gray", "Pink", "Lime", "Yellow", "LightBlue", "Magenta", "Orange", "White"};
 
-    public static void register(RegistryEvent.Register<IRecipe> event) {
-        /*
+	public static void register(RegistryEvent.Register<IRecipe> event) {
+	    /*
         GameRegistry.addRecipe(new ItemStack(FABlockRegistry.SKULL_LANTERN, 1), "X", "Y", 'X', FABlockRegistry.SKULL_BLOCK, 'Y', Blocks.TORCH);
         GameRegistry.addRecipe(new ItemStack(Items.DYE, 5, 15), "X", 'X', FABlockRegistry.SKULL_BLOCK);
         GameRegistry.addRecipe(new ItemStack(Items.DYE, 5, 15), "X", 'X', FABlockRegistry.SKULL_LANTERN);
@@ -114,5 +101,5 @@ public class FARecipeRegistry {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(FABlockRegistry.BUBBLE_MACHINE), "XYX", "YZY", "XYX", 'X', "nuggetGold", 'Y', "ingotGold", 'Z', Items.WATER_BUCKET));
 
     */
-    }
+	}
 }

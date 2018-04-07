@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=bottom": { "model": "fossil:palm_planks_slab" },
-        "half=top": { "model": "fossil:palm_planks_upper_slab" }
+  "variants": {
+    "half=bottom": {
+      "model": "fossil:palm_planks_slab"
+    },
+    "half=top": {
+      "model": "fossil:palm_planks_upper_slab"
     }
+  }
 }

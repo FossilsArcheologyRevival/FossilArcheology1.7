@@ -1,8 +1,19 @@
 {
-    "variants": {
-        "facing=north": { "model": "fossil:bubble_blower" },
-        "facing=south": { "model": "fossil:bubble_blower", "y": 180 },
-        "facing=west":  { "model": "fossil:bubble_blower", "y": 270 },
-        "facing=east":  { "model": "fossil:bubble_blower", "y": 90 }
+  "variants": {
+    "facing=north": {
+      "model": "fossil:bubble_blower"
+    },
+    "facing=south": {
+      "model": "fossil:bubble_blower",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fossil:bubble_blower",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "fossil:bubble_blower",
+      "y": 90
     }
+  }
 }

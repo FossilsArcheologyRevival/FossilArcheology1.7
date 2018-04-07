@@ -128,10 +128,10 @@ public class ModelLiopleurodon extends ModelPrehistoric {
 		this.resetToDefaultPose();
 		setRotationAngles(f, f1, f2, f3, f4, f5, (Entity) entity);
 		animator.setAnimation(prehistoric.SPEAK_ANIMATION);
-        animator.startKeyframe(10);
-        ModelUtils.rotate(animator, JawBottomBase, 15, 0, 0);
-        animator.endKeyframe();
-        animator.resetKeyframe(10);
+		animator.startKeyframe(10);
+		ModelUtils.rotate(animator, JawBottomBase, 15, 0, 0);
+		animator.endKeyframe();
+		animator.resetKeyframe(10);
 		animator.setAnimation(EntityLiopleurodon.SHAKE_ANIMATION);
 		animator.startKeyframe(10);
 		ModelUtils.rotate(animator, Neck, 0, -23F, 0);
@@ -166,26 +166,26 @@ public class ModelLiopleurodon extends ModelPrehistoric {
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
 		AdvancedModelRenderer[] tailParts = {this.Tail, this.Tail1, this.Tail2};
 		AdvancedModelRenderer[] neckParts = {this.Neck, this.Head};
-		if(((EntityPrehistoric) entity).isSkeleton()){
+		if (((EntityPrehistoric) entity).isSkeleton()) {
 			return;
 		}
-		if(entity.getPassengers().isEmpty()){
+		if (entity.getPassengers().isEmpty()) {
 			ModelUtils.faceTargetMod(Neck, f3, f4, 0.5F);
 			ModelUtils.faceTargetMod(Head, f3, f4, 0.5F);
 		}
 		{
 			float sitProgress = ((EntityPrehistoric) (entity)).weakProgress;
-			sitAnimationRotationPrev(BackFlipper_Left, sitProgress, (float)Math.toRadians(30.0D), -((float)Math.toRadians(5.0D)), -((float)Math.toRadians(50.0D)));
-			sitAnimationRotationPrev(FrontFlipper_Left, sitProgress, (float)Math.toRadians(10.0D), (float)Math.toRadians(15.0D), -((float)Math.toRadians(44.0D)));
-			sitAnimationRotationPrev(FrontFlipper_Right, sitProgress, (float)Math.toRadians(10.0D), -((float)Math.toRadians(15.0D)), (float)Math.toRadians(44.0D));
-			sitAnimationRotationPrev(LowerBody, sitProgress, -((float)Math.toRadians(2.61D)), 0, 0);
-			sitAnimationRotationPrev(JawBottomBase, sitProgress, (float)Math.toRadians(15.65D), 0, 0);
-			sitAnimationRotationPrev(Neck, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-			sitAnimationRotationPrev(Head, sitProgress, (float)Math.toRadians(7.83D), -((float)Math.toRadians(2.61D)), -((float)Math.toRadians(31.3D)));
-			sitAnimationRotationPrev(Tail2, sitProgress, -((float)Math.toRadians(10.43D)), -((float)Math.toRadians(20.87D)), 0);
-			sitAnimationRotationPrev(BackFlipper_Right, sitProgress, (float)Math.toRadians(30.0D), (float)Math.toRadians(5.0D), (float)Math.toRadians(50.0D));
-			sitAnimationRotationPrev(Tail, sitProgress, -((float)Math.toRadians(10.43D)), 0, 0);
-			sitAnimationRotationPrev(Tail1, sitProgress, -((float)Math.toRadians(5.22D)), -((float)Math.toRadians(18.26D)), 0);
+			sitAnimationRotationPrev(BackFlipper_Left, sitProgress, (float) Math.toRadians(30.0D), -((float) Math.toRadians(5.0D)), -((float) Math.toRadians(50.0D)));
+			sitAnimationRotationPrev(FrontFlipper_Left, sitProgress, (float) Math.toRadians(10.0D), (float) Math.toRadians(15.0D), -((float) Math.toRadians(44.0D)));
+			sitAnimationRotationPrev(FrontFlipper_Right, sitProgress, (float) Math.toRadians(10.0D), -((float) Math.toRadians(15.0D)), (float) Math.toRadians(44.0D));
+			sitAnimationRotationPrev(LowerBody, sitProgress, -((float) Math.toRadians(2.61D)), 0, 0);
+			sitAnimationRotationPrev(JawBottomBase, sitProgress, (float) Math.toRadians(15.65D), 0, 0);
+			sitAnimationRotationPrev(Neck, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(Head, sitProgress, (float) Math.toRadians(7.83D), -((float) Math.toRadians(2.61D)), -((float) Math.toRadians(31.3D)));
+			sitAnimationRotationPrev(Tail2, sitProgress, -((float) Math.toRadians(10.43D)), -((float) Math.toRadians(20.87D)), 0);
+			sitAnimationRotationPrev(BackFlipper_Right, sitProgress, (float) Math.toRadians(30.0D), (float) Math.toRadians(5.0D), (float) Math.toRadians(50.0D));
+			sitAnimationRotationPrev(Tail, sitProgress, -((float) Math.toRadians(10.43D)), 0, 0);
+			sitAnimationRotationPrev(Tail1, sitProgress, -((float) Math.toRadians(5.22D)), -((float) Math.toRadians(18.26D)), 0);
 		}
 		float speed = 0.1F;
 		float speed2 = 0.4F;

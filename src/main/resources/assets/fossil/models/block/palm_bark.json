@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "fossil:blocks/palm_log"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fossil:blocks/palm_log"
+  }
 }

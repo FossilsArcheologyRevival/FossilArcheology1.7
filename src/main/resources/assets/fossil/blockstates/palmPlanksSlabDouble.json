@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "fossil:palm_planks"
-        }
+  "variants": {
+    "normal": {
+      "model": "fossil:palm_planks"
     }
+  }
 }

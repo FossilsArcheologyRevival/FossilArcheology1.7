@@ -1,10 +1,10 @@
 {
-    "parent": "fossil:block/orientable2",
-    "textures": {
-        "top": "fossil:blocks/skull_side",
-        "front": "fossil:blocks/skull_front_on",
-        "side": "fossil:blocks/skull_side",
-        "back": "fossil:blocks/skull_back",
-        "bottom": "fossil:blocks/skull_back"
-    }
+  "parent": "fossil:block/orientable2",
+  "textures": {
+    "top": "fossil:blocks/skull_side",
+    "front": "fossil:blocks/skull_front_on",
+    "side": "fossil:blocks/skull_side",
+    "back": "fossil:blocks/skull_back",
+    "bottom": "fossil:blocks/skull_back"
+  }
 }

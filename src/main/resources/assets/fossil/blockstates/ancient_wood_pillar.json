@@ -1,8 +1,19 @@
 {
-    "variants": {
-        "axis=y":  { "model": "fossil:ancient_wood_pillar" },
-        "axis=z":   { "model": "fossil:ancient_wood_pillar", "x": 90 },
-        "axis=x":   { "model": "fossil:ancient_wood_pillar", "x": 90, "y": 90 },
-        "axis=none": { "model": "fossil:ancient_wood_pillar_bark" }
+  "variants": {
+    "axis=y": {
+      "model": "fossil:ancient_wood_pillar"
+    },
+    "axis=z": {
+      "model": "fossil:ancient_wood_pillar",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "fossil:ancient_wood_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=none": {
+      "model": "fossil:ancient_wood_pillar_bark"
     }
+  }
 }

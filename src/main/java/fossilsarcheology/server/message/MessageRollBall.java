@@ -13,40 +13,40 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class MessageRollBall extends AbstractMessage<MessageRollBall> {
 
-    public int ballID;
-    public int rollTicks;
+	public int ballID;
+	public int rollTicks;
 
-    public MessageRollBall(int ballID, int rollTicks) {
-        this.ballID = ballID;
-        this.rollTicks = rollTicks;
-    }
+	public MessageRollBall(int ballID, int rollTicks) {
+		this.ballID = ballID;
+		this.rollTicks = rollTicks;
+	}
 
-    public MessageRollBall() {
-    }
+	public MessageRollBall() {
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void onClientReceived(Minecraft client, MessageRollBall message, EntityPlayer player, MessageContext messageContext) {
-        Entity entity = player.world.getEntityByID(message.ballID);
-        if (entity instanceof EntityToyBall) {
-            EntityToyBall ball = (EntityToyBall) entity;
-            ball.rollValue = message.rollTicks;
-        }
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void onClientReceived(Minecraft client, MessageRollBall message, EntityPlayer player, MessageContext messageContext) {
+		Entity entity = player.world.getEntityByID(message.ballID);
+		if (entity instanceof EntityToyBall) {
+			EntityToyBall ball = (EntityToyBall) entity;
+			ball.rollValue = message.rollTicks;
+		}
+	}
 
-    @Override
-    public void onServerReceived(MinecraftServer server, MessageRollBall message, EntityPlayer player, MessageContext messageContext) {
-    }
+	@Override
+	public void onServerReceived(MinecraftServer server, MessageRollBall message, EntityPlayer player, MessageContext messageContext) {
+	}
 
-    @Override
-    public void fromBytes(ByteBuf buf) {
-        ballID = buf.readInt();
-        rollTicks = buf.readInt();
-    }
+	@Override
+	public void fromBytes(ByteBuf buf) {
+		ballID = buf.readInt();
+		rollTicks = buf.readInt();
+	}
 
-    @Override
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(ballID);
-        buf.writeInt(rollTicks);
-    }
+	@Override
+	public void toBytes(ByteBuf buf) {
+		buf.writeInt(ballID);
+		buf.writeInt(rollTicks);
+	}
 }

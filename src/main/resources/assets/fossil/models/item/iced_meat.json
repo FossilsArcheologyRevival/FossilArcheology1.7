@@ -1,7 +1,7 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "fossil:items/iced_meat"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fossil:items/iced_meat"
+  }
 }
 

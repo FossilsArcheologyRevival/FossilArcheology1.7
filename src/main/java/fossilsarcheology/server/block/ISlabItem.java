@@ -4,6 +4,6 @@ import net.minecraft.item.ItemBlock;
 
 public interface ISlabItem {
 
-    public ItemBlock getItemBlock();
+	public ItemBlock getItemBlock();
 
 }

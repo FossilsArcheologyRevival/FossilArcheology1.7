@@ -1,7 +1,7 @@
 package fossilsarcheology.server.api;
 
 public interface DefaultRenderedItem {
-    default String getResource(String unlocalizedName) {
-        return unlocalizedName;
-    }
+	default String getResource(String unlocalizedName) {
+		return unlocalizedName;
+	}
 }

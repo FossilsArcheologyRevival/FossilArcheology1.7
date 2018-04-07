@@ -1,8 +1,8 @@
 {
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "fossil:blocks/ancient_wood",
-        "top": "fossil:blocks/ancient_wood",
-        "side": "fossil:blocks/ancient_wood"
-    }
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "fossil:blocks/ancient_wood",
+    "top": "fossil:blocks/ancient_wood",
+    "side": "fossil:blocks/ancient_wood"
+  }
 }

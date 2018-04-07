@@ -1,10 +1,10 @@
 {
-    "parent": "fossil:block/orientable2",
-    "textures": {
-        "top": "fossil:blocks/feeder_top2",
-        "front": "fossil:blocks/feeder_front2",
-        "side": "fossil:blocks/feeder_sides",
-        "back": "fossil:blocks/feeder_sides",
-        "bottom": "fossil:blocks/feeder_bottom"
-    }
+  "parent": "fossil:block/orientable2",
+  "textures": {
+    "top": "fossil:blocks/feeder_top2",
+    "front": "fossil:blocks/feeder_front2",
+    "side": "fossil:blocks/feeder_sides",
+    "back": "fossil:blocks/feeder_sides",
+    "bottom": "fossil:blocks/feeder_bottom"
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "fossil:blocks/plants/plant_dillhoffia"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fossil:blocks/plants/plant_dillhoffia"
+  }
 }

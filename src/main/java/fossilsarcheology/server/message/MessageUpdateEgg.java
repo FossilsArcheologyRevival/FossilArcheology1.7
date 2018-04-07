@@ -14,42 +14,42 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class MessageUpdateEgg extends AbstractMessage<MessageUpdateEgg> {
 
-    public int dinosaurID;
-    public int ordinal;
+	public int dinosaurID;
+	public int ordinal;
 
-    public MessageUpdateEgg(int dinosaurID, int ordinal) {
-        this.dinosaurID = dinosaurID;
-        this.ordinal = ordinal;
-    }
+	public MessageUpdateEgg(int dinosaurID, int ordinal) {
+		this.dinosaurID = dinosaurID;
+		this.ordinal = ordinal;
+	}
 
-    public MessageUpdateEgg() {
-    }
+	public MessageUpdateEgg() {
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void onClientReceived(Minecraft client, MessageUpdateEgg message, EntityPlayer player, MessageContext messageContext) {
-        Entity entity = player.world.getEntityByID(message.dinosaurID);
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void onClientReceived(Minecraft client, MessageUpdateEgg message, EntityPlayer player, MessageContext messageContext) {
+		Entity entity = player.world.getEntityByID(message.dinosaurID);
 
-        if (entity instanceof EntityDinosaurEgg) {
-            EntityDinosaurEgg egg = (EntityDinosaurEgg) entity;
-            egg.selfType = PrehistoricEntityType.values()[message.ordinal];
-        }
-    }
+		if (entity instanceof EntityDinosaurEgg) {
+			EntityDinosaurEgg egg = (EntityDinosaurEgg) entity;
+			egg.selfType = PrehistoricEntityType.values()[message.ordinal];
+		}
+	}
 
-    @Override
-    public void onServerReceived(MinecraftServer server, MessageUpdateEgg message, EntityPlayer player, MessageContext messageContext) {
-    }
+	@Override
+	public void onServerReceived(MinecraftServer server, MessageUpdateEgg message, EntityPlayer player, MessageContext messageContext) {
+	}
 
-    @Override
-    public void fromBytes(ByteBuf buf) {
-        dinosaurID = buf.readInt();
-        ordinal = buf.readInt();
+	@Override
+	public void fromBytes(ByteBuf buf) {
+		dinosaurID = buf.readInt();
+		ordinal = buf.readInt();
 
-    }
+	}
 
-    @Override
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(dinosaurID);
-        buf.writeInt(ordinal);
-    }
+	@Override
+	public void toBytes(ByteBuf buf) {
+		buf.writeInt(dinosaurID);
+		buf.writeInt(ordinal);
+	}
 }

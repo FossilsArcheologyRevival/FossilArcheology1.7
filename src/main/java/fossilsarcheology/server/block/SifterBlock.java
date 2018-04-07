@@ -29,113 +29,113 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.Random;
 
 public class SifterBlock extends BlockContainer implements DefaultRenderedItem, BlockEntity {
-    private static boolean keepInventory = false;
-    private final boolean isActive;
+	private static boolean keepInventory = false;
+	private final boolean isActive;
 
-    public SifterBlock(boolean isActive) {
-        super(Material.WOOD);
-        this.setHarvestLevel("axe", 0);
-        this.setHardness(2.5F);
-        this.setSoundType(SoundType.METAL);
-        this.isActive = isActive;
-        if (isActive) {
-            setUnlocalizedName("sifterActive");
-        } else {
-            setUnlocalizedName("sifter");
-            setCreativeTab(FATabRegistry.BLOCKS);
-        }
-    }
+	public SifterBlock(boolean isActive) {
+		super(Material.WOOD);
+		this.setHarvestLevel("axe", 0);
+		this.setHardness(2.5F);
+		this.setSoundType(SoundType.METAL);
+		this.isActive = isActive;
+		if (isActive) {
+			setUnlocalizedName("sifterActive");
+		} else {
+			setUnlocalizedName("sifter");
+			setCreativeTab(FATabRegistry.BLOCKS);
+		}
+	}
 
-    @Override
-    public EnumBlockRenderType getRenderType(IBlockState state) {
-        return EnumBlockRenderType.MODEL;
-    }
+	public static void setState(boolean isActive, World world, BlockPos pos) {
+		TileEntity tile = world.getTileEntity(pos);
+		keepInventory = true;
+		if (isActive) {
+			world.setBlockState(pos, FABlockRegistry.SIFTER_ACTIVE.getDefaultState());
+		} else {
+			world.setBlockState(pos, FABlockRegistry.SIFTER_IDLE.getDefaultState());
+		}
+		keepInventory = false;
+		if (tile != null) {
+			tile.validate();
+			world.setTileEntity(pos, tile);
+		}
+	}
 
-    public static void setState(boolean isActive, World world, BlockPos pos) {
-        TileEntity tile = world.getTileEntity(pos);
-        keepInventory = true;
-        if (isActive) {
-            world.setBlockState(pos, FABlockRegistry.SIFTER_ACTIVE.getDefaultState());
-        } else {
-            world.setBlockState(pos, FABlockRegistry.SIFTER_IDLE.getDefaultState());
-        }
-        keepInventory = false;
-        if (tile != null) {
-            tile.validate();
-            world.setTileEntity(pos, tile);
-        }
-    }
+	@Override
+	public EnumBlockRenderType getRenderType(IBlockState state) {
+		return EnumBlockRenderType.MODEL;
+	}
 
-    @Override
-    public Item getItemDropped(IBlockState state, Random random, int fortune) {
-        return Item.getItemFromBlock(FABlockRegistry.SIFTER_IDLE);
-    }
+	@Override
+	public Item getItemDropped(IBlockState state, Random random, int fortune) {
+		return Item.getItemFromBlock(FABlockRegistry.SIFTER_IDLE);
+	}
 
-    @Override
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
-        if (!world.isRemote) {
-            player.openGui(Revival.INSTANCE, ServerProxy.GUI_SIFTER, world, pos.getX(), pos.getY(), pos.getZ());
-        }
-        return true;
-    }
+	@Override
+	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
+		if (!world.isRemote) {
+			player.openGui(Revival.INSTANCE, ServerProxy.GUI_SIFTER, world, pos.getX(), pos.getY(), pos.getZ());
+		}
+		return true;
+	}
 
-    @Override
-    public void breakBlock(World world, BlockPos pos, IBlockState state) {
-        if (!keepInventory) {
-            TileEntitySifter tile = (TileEntitySifter) world.getTileEntity(pos);
-            if (tile != null) {
-                for (int i = 0; i < tile.getSizeInventory(); ++i) {
-                    ItemStack stack = tile.getStackInSlot(i);
-                    if (stack != null) {
-                        float xOffset = world.rand.nextFloat() * 0.8F + 0.1F;
-                        float yOffset = world.rand.nextFloat() * 0.8F + 0.1F;
-                        float zOffset = world.rand.nextFloat() * 0.8F + 0.1F;
-                        while (stack.getCount() > 0) {
-                            int rand = world.rand.nextInt(21) + 10;
-                            if (rand > stack.getCount()) {
-                                rand = stack.getCount();
-                            }
-                            stack.shrink(rand);
-                            EntityItem entity = new EntityItem(world, pos.getX() + xOffset, pos.getY() + yOffset, pos.getZ() + zOffset, new ItemStack(stack.getItem(), rand, stack.getItemDamage()));
-                            if (stack.hasTagCompound()) {
-                                entity.getItem().setTagCompound(stack.getTagCompound().copy());
-                            }
-                            float offset = 0.05F;
-                            entity.motionX = world.rand.nextGaussian() * offset;
-                            entity.motionY = world.rand.nextGaussian() * offset + 0.2F;
-                            entity.motionZ = world.rand.nextGaussian() * offset;
-                            world.spawnEntity(entity);
-                        }
-                    }
-                }
-            }
-        }
-        super.breakBlock(world, pos, state);
-    }
+	@Override
+	public void breakBlock(World world, BlockPos pos, IBlockState state) {
+		if (!keepInventory) {
+			TileEntitySifter tile = (TileEntitySifter) world.getTileEntity(pos);
+			if (tile != null) {
+				for (int i = 0; i < tile.getSizeInventory(); ++i) {
+					ItemStack stack = tile.getStackInSlot(i);
+					if (stack != null) {
+						float xOffset = world.rand.nextFloat() * 0.8F + 0.1F;
+						float yOffset = world.rand.nextFloat() * 0.8F + 0.1F;
+						float zOffset = world.rand.nextFloat() * 0.8F + 0.1F;
+						while (stack.getCount() > 0) {
+							int rand = world.rand.nextInt(21) + 10;
+							if (rand > stack.getCount()) {
+								rand = stack.getCount();
+							}
+							stack.shrink(rand);
+							EntityItem entity = new EntityItem(world, pos.getX() + xOffset, pos.getY() + yOffset, pos.getZ() + zOffset, new ItemStack(stack.getItem(), rand, stack.getItemDamage()));
+							if (stack.hasTagCompound()) {
+								entity.getItem().setTagCompound(stack.getTagCompound().copy());
+							}
+							float offset = 0.05F;
+							entity.motionX = world.rand.nextGaussian() * offset;
+							entity.motionY = world.rand.nextGaussian() * offset + 0.2F;
+							entity.motionZ = world.rand.nextGaussian() * offset;
+							world.spawnEntity(entity);
+						}
+					}
+				}
+			}
+		}
+		super.breakBlock(world, pos, state);
+	}
 
-    @Override
-    public TileEntity createNewTileEntity(World world, int metadata) {
-        return new TileEntitySifter();
-    }
+	@Override
+	public TileEntity createNewTileEntity(World world, int metadata) {
+		return new TileEntitySifter();
+	}
 
-    @Override
-    public boolean hasComparatorInputOverride(IBlockState state) {
-        return true;
-    }
+	@Override
+	public boolean hasComparatorInputOverride(IBlockState state) {
+		return true;
+	}
 
-    @Override
-    public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos) {
-        return Container.calcRedstoneFromInventory((IInventory) world.getTileEntity(pos));
-    }
+	@Override
+	public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos) {
+		return Container.calcRedstoneFromInventory((IInventory) world.getTileEntity(pos));
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-        return new ItemStack(FABlockRegistry.SIFTER_IDLE);
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
+		return new ItemStack(FABlockRegistry.SIFTER_IDLE);
+	}
 
-    @Override
-    public Class<? extends TileEntity> getEntity() {
-        return TileEntitySifter.class;
-    }
+	@Override
+	public Class<? extends TileEntity> getEntity() {
+		return TileEntitySifter.class;
+	}
 }

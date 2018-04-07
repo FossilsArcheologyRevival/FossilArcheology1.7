@@ -1,13 +1,5 @@
 package fossilsarcheology.server.event;
 
-import fossilsarcheology.server.achievement.FossilAchievements;
-import fossilsarcheology.server.block.FABlockRegistry;
-import fossilsarcheology.server.item.FAItemRegistry;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
-
 public class FossilCraftingEvent {
 
    /* @SubscribeEvent

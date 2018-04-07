@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "fossil:ancient_stone_brick"
-        }
+  "variants": {
+    "normal": {
+      "model": "fossil:ancient_stone_brick"
     }
+  }
 }

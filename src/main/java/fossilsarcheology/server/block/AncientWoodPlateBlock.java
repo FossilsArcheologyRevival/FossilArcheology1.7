@@ -15,46 +15,46 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AncientWoodPlateBlock extends Block implements DefaultRenderedItem {
 
-    protected static final AxisAlignedBB PLATE_AABB = new AxisAlignedBB(0.0F, 0.0F, 0.0F, 1.0F, 0.125F, 1.0F);
+	protected static final AxisAlignedBB PLATE_AABB = new AxisAlignedBB(0.0F, 0.0F, 0.0F, 1.0F, 0.125F, 1.0F);
 
-    public AncientWoodPlateBlock() {
-        super(Material.WOOD);
-        setCreativeTab(FATabRegistry.BLOCKS);
-        setHardness(0.6F);
-        setUnlocalizedName("ancient_wood_plate");
-    }
+	public AncientWoodPlateBlock() {
+		super(Material.WOOD);
+		setCreativeTab(FATabRegistry.BLOCKS);
+		setHardness(0.6F);
+		setUnlocalizedName("ancient_wood_plate");
+	}
 
-    public boolean isFullCube(IBlockState state) {
-        return false;
-    }
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
 
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		return false;
+	}
 
-    public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
-        return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
-    }
+	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+		return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
+	}
 
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn) {
-        if (!this.canBlockStay(worldIn, pos)) {
-            worldIn.setBlockToAir(pos);
-        }
-    }
+	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn) {
+		if (!this.canBlockStay(worldIn, pos)) {
+			worldIn.setBlockToAir(pos);
+		}
+	}
 
-    private boolean canBlockStay(World worldIn, BlockPos pos) {
-        return worldIn.getBlockState(pos.down()).getMaterial().isSolid();
-    }
+	private boolean canBlockStay(World worldIn, BlockPos pos) {
+		return worldIn.getBlockState(pos.down()).getMaterial().isSolid();
+	}
 
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT;
+	}
 
-    @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return PLATE_AABB;
-    }
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return PLATE_AABB;
+	}
 
 }

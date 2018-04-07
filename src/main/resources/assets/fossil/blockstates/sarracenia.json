@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=lower": { "model": "fossil:sarracenia_1" },
-        "half=upper":    { "model":"fossil:sarracenia_2" }
+  "variants": {
+    "half=lower": {
+      "model": "fossil:sarracenia_1"
+    },
+    "half=upper": {
+      "model": "fossil:sarracenia_2"
     }
+  }
 }

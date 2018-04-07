@@ -6,9 +6,9 @@ import net.minecraft.item.ItemSpade;
 
 public class BasicShovelItem extends ItemSpade implements DefaultRenderedItem {
 
-    public BasicShovelItem(ToolMaterial toolmaterial, String name) {
-        super(toolmaterial);
-        this.setUnlocalizedName(name);
-        this.setCreativeTab(FATabRegistry.ITEMS);
-    }
+	public BasicShovelItem(ToolMaterial toolmaterial, String name) {
+		super(toolmaterial);
+		this.setUnlocalizedName(name);
+		this.setCreativeTab(FATabRegistry.ITEMS);
+	}
 }

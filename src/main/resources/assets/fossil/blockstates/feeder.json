@@ -1,23 +1,64 @@
 {
-    "variants": {
-        "facing=north,food=0": { "model": "fossil:feeder_empty", "y": 180 },
-        "facing=east,food=0":  { "model": "fossil:feeder_empty", "y": 270 },
-        "facing=south,food=0": { "model": "fossil:feeder_empty" },
-        "facing=west,food=0":  { "model": "fossil:feeder_empty", "y": 90 },
-
-        "facing=north,food=1": { "model": "fossil:feeder_plant", "y": 180 },
-        "facing=east,food=1":  { "model": "fossil:feeder_plant", "y": 270 },
-        "facing=south,food=1": { "model": "fossil:feeder_plant" },
-        "facing=west,food=1":  { "model": "fossil:feeder_plant", "y": 90 },
-
-        "facing=north,food=2": { "model": "fossil:feeder_meat", "y": 180 },
-        "facing=east,food=2":  { "model": "fossil:feeder_meat", "y": 270 },
-        "facing=south,food=2": { "model": "fossil:feeder_meat" },
-        "facing=west,food=2":  { "model": "fossil:feeder_meat", "y": 90 },
-
-        "facing=north,food=3": { "model": "fossil:feeder_both", "y": 180 },
-        "facing=east,food=3":  { "model": "fossil:feeder_both", "y": 270 },
-        "facing=south,food=3": { "model": "fossil:feeder_both" },
-        "facing=west,food=3":  { "model": "fossil:feeder_both", "y": 90 }
+  "variants": {
+    "facing=north,food=0": {
+      "model": "fossil:feeder_empty",
+      "y": 180
+    },
+    "facing=east,food=0": {
+      "model": "fossil:feeder_empty",
+      "y": 270
+    },
+    "facing=south,food=0": {
+      "model": "fossil:feeder_empty"
+    },
+    "facing=west,food=0": {
+      "model": "fossil:feeder_empty",
+      "y": 90
+    },
+    "facing=north,food=1": {
+      "model": "fossil:feeder_plant",
+      "y": 180
+    },
+    "facing=east,food=1": {
+      "model": "fossil:feeder_plant",
+      "y": 270
+    },
+    "facing=south,food=1": {
+      "model": "fossil:feeder_plant"
+    },
+    "facing=west,food=1": {
+      "model": "fossil:feeder_plant",
+      "y": 90
+    },
+    "facing=north,food=2": {
+      "model": "fossil:feeder_meat",
+      "y": 180
+    },
+    "facing=east,food=2": {
+      "model": "fossil:feeder_meat",
+      "y": 270
+    },
+    "facing=south,food=2": {
+      "model": "fossil:feeder_meat"
+    },
+    "facing=west,food=2": {
+      "model": "fossil:feeder_meat",
+      "y": 90
+    },
+    "facing=north,food=3": {
+      "model": "fossil:feeder_both",
+      "y": 180
+    },
+    "facing=east,food=3": {
+      "model": "fossil:feeder_both",
+      "y": 270
+    },
+    "facing=south,food=3": {
+      "model": "fossil:feeder_both"
+    },
+    "facing=west,food=3": {
+      "model": "fossil:feeder_both",
+      "y": 90
     }
+  }
 }
