@@ -158,11 +158,13 @@ public class AnalyzerBlock extends BlockContainer implements DefaultRenderedItem
 		return new AnalyzerBlockEntity();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean hasComparatorInputOverride(IBlockState state) {
 		return true;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos) {
 		return Container.calcRedstoneFromInventory((IInventory) world.getTileEntity(pos));
@@ -174,6 +176,7 @@ public class AnalyzerBlock extends BlockContainer implements DefaultRenderedItem
 		return new ItemStack(FABlockRegistry.ANALYZER);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing facing = EnumFacing.getFront(meta);
@@ -188,11 +191,13 @@ public class AnalyzerBlock extends BlockContainer implements DefaultRenderedItem
 		return state.getValue(FACING).getIndex();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState withRotation(IBlockState state, Rotation rotation) {
 		return state.withProperty(FACING, rotation.rotate(state.getValue(FACING)));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState withMirror(IBlockState state, Mirror mirror) {
 		return state.withRotation(mirror.toRotation(state.getValue(FACING)));

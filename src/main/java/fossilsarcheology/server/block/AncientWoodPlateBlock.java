@@ -52,6 +52,7 @@ public class AncientWoodPlateBlock extends Block implements DefaultRenderedItem 
 		return BlockRenderLayer.CUTOUT;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return PLATE_AABB;

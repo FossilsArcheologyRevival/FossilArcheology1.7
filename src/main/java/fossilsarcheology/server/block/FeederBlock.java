@@ -117,6 +117,7 @@ public class FeederBlock extends BlockContainer implements DefaultRenderedItem {
 		worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing enumfacing = EnumFacing.getFront(meta);
 
@@ -132,10 +133,12 @@ public class FeederBlock extends BlockContainer implements DefaultRenderedItem {
 		return i |= 3;
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState withRotation(IBlockState state, Rotation rot) {
 		return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
 		return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
 	}

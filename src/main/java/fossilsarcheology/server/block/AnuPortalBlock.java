@@ -28,6 +28,7 @@ public class AnuPortalBlock extends Block {
 		this.setUnlocalizedName("anu_portal");
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;

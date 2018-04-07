@@ -75,6 +75,7 @@ public class PalmSaplingBlock extends BlockBush implements DefaultRenderedItem, 
 		this.grow(world, pos, state, rand);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(STAGE, meta);

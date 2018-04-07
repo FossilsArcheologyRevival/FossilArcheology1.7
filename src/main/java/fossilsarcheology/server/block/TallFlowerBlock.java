@@ -121,6 +121,7 @@ public class TallFlowerBlock extends BlockBush implements DefaultRenderedItem, I
 		spawnAsEntity(worldIn, pos, new ItemStack(this));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(HALF, TallFlowerBlock.EnumBlockHalf.UPPER);

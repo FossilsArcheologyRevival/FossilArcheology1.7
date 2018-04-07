@@ -38,6 +38,7 @@ public class TimeMachineBlock extends BlockContainer implements DefaultRenderedI
 		this.setCreativeTab(FATabRegistry.BLOCKS);
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
@@ -46,7 +47,7 @@ public class TimeMachineBlock extends BlockContainer implements DefaultRenderedI
 		return EnumBlockRenderType.MODEL;
 	}
 
-
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
@@ -57,6 +58,7 @@ public class TimeMachineBlock extends BlockContainer implements DefaultRenderedI
 		return BlockRenderLayer.CUTOUT;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return QUARTER_BLOCK_AABB;

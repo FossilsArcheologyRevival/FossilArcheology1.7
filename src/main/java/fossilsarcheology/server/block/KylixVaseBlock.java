@@ -66,10 +66,12 @@ public class KylixVaseBlock extends BlockContainer implements BlockEntity, IBloc
 		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(VARIANT, KylixVaseBlock.EnumType.byMetadata(meta));
 	}

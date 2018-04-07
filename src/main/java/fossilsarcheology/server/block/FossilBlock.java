@@ -117,6 +117,7 @@ public class FossilBlock extends Block implements DefaultRenderedItem {
 		//player.addStat(FossilAchievements.FIRST_FOSSIL);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
 		ArrayList<ItemStack> drops = new ArrayList<>();

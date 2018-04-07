@@ -118,11 +118,13 @@ public class SifterBlock extends BlockContainer implements DefaultRenderedItem, 
 		return new TileEntitySifter();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean hasComparatorInputOverride(IBlockState state) {
 		return true;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos) {
 		return Container.calcRedstoneFromInventory((IInventory) world.getTileEntity(pos));

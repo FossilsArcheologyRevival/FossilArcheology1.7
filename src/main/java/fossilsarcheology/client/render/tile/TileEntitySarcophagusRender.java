@@ -23,6 +23,7 @@ public class TileEntitySarcophagusRender extends TileEntitySpecialRenderer<TileE
 	public TileEntitySarcophagusRender() {
 	}
 
+	@SuppressWarnings("deprecation")
 	public void render(TileEntitySarcophagus chest, double x, double y, double z, float f, int destroy, float alpha) {
 		short short1 = 0;
 		int i = 0;

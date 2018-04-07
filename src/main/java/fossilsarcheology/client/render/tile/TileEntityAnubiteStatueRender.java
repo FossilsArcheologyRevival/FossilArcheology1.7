@@ -14,6 +14,7 @@ public class TileEntityAnubiteStatueRender extends TileEntitySpecialRenderer<Til
 	public TileEntityAnubiteStatueRender() {
 	}
 
+	@SuppressWarnings("deprecation")
 	public void render(TileEntityAnubiteStatue tileentity, double x, double y, double z, float f, int destroy, float alpha) {
 		short short1 = 0;
 		if (tileentity != null && tileentity.hasWorld()) {

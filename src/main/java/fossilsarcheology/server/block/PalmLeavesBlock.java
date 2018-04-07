@@ -42,6 +42,7 @@ public class PalmLeavesBlock extends BlockLeaves implements DefaultRenderedItem 
 		return Collections.singletonList(new ItemStack(this));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(DECAYABLE, (meta & 4) == 0).withProperty(CHECK_DECAY, (meta & 8) > 0);

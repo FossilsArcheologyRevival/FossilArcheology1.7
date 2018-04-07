@@ -19,6 +19,7 @@ public class TileEntityAncientChestRender extends TileEntitySpecialRenderer<Tile
 	public TileEntityAncientChestRender() {
 	}
 
+	@SuppressWarnings("deprecation")
 	public void render(TileEntityAncientChest tileentity, double x, double y, double z, float f, int destroy, float alpha) {
 		short short1 = 0;
 		int i = 0;

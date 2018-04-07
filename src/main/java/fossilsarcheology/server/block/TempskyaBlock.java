@@ -87,6 +87,7 @@ public class TempskyaBlock extends BlockBush implements DefaultRenderedItem {
 	}
 
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(LAYER, Integer.valueOf(meta));
 	}

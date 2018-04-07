@@ -49,6 +49,7 @@ public class RenderingHandler {
 	public void onPreInit() {
 	}
 
+	@SuppressWarnings("deprecation")
 	public void onInit() {
 		RenderingRegistry.registerEntityRenderingHandler(JavelinEntity.class, new JavelinRenderer(MINECRAFT.getRenderManager()));
 		RenderingRegistry.registerEntityRenderingHandler(AncientJavelinEntity.class, new JavelinRenderer(MINECRAFT.getRenderManager()));

@@ -55,6 +55,7 @@ public class AmphoraVaseBlock extends BlockContainer implements BlockEntity, IBl
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(VARIANT, AmphoraVaseBlock.EnumType.byMetadata(meta));
 	}
@@ -87,6 +88,7 @@ public class AmphoraVaseBlock extends BlockContainer implements BlockEntity, IBl
 		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}

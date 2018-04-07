@@ -15,6 +15,7 @@ public class TileEntityAnuStatueRender extends TileEntitySpecialRenderer<TileEnt
 	public TileEntityAnuStatueRender() {
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void render(TileEntityAnuStatue tileentity, double x, double y, double z, float f, int destroy, float alpha) {
 		short short1 = 0;

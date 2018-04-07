@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import java.util.Random;
 
 public class SlimeTrailBlock extends BlockRail implements DefaultRenderedItem {
+	@SuppressWarnings("deprecation")
 	public SlimeTrailBlock() {
 		this.setHardness(0.3F);
 		this.setUnlocalizedName("slimetrail");

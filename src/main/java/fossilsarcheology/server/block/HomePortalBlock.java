@@ -28,6 +28,7 @@ public class HomePortalBlock extends Block implements DefaultRenderedItem {
 		this.setUnlocalizedName("home_portal");
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;

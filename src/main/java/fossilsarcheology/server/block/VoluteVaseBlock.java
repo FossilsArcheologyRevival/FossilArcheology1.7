@@ -52,6 +52,7 @@ public class VoluteVaseBlock extends BlockContainer implements BlockEntity, IBlo
 		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
@@ -70,6 +71,7 @@ public class VoluteVaseBlock extends BlockContainer implements BlockEntity, IBlo
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(VARIANT, VoluteVaseBlock.EnumType.byMetadata(meta));
 	}

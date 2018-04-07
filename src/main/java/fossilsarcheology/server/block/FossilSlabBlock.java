@@ -57,10 +57,12 @@ public abstract class FossilSlabBlock extends BlockSlab implements DefaultRender
 		return Item.getItemFromBlock(baseBlock);
 	}
 
+	@SuppressWarnings("deprecation")
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 		return new ItemStack(baseBlock);
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		IBlockState iblockstate = this.getDefaultState();
 		if (!this.isDouble()) {

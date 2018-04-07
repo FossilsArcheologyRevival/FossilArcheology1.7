@@ -60,6 +60,7 @@ public class AncientGlassBlock extends BlockBreakable implements DefaultRendered
 		return BlockRenderLayer.CUTOUT;
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}

@@ -41,6 +41,7 @@ public class FigurineBlock extends BlockContainer implements IBlockItem, BlockEn
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		return AABB;
 	}
@@ -74,10 +75,12 @@ public class FigurineBlock extends BlockContainer implements IBlockItem, BlockEn
 		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
 
+	@SuppressWarnings("deprecation")
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(VARIANT, FigurineBlock.EnumType.byMetadata(meta));
 	}
