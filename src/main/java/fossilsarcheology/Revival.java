@@ -17,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Revival.MODID, name = "Fossils and Archeology Revival", version = Revival.VERSION, dependencies = "required-after:llibrary@[" + Revival.LLIBRARY_VERSION + ",)")
 public class Revival {
+	//
 	public static final String MODID = "fossil";
 	public static final String VERSION = "8.0.0-develop";
 	public static final ReleaseType RELEASE_TYPE = ReleaseType.parseVersion(VERSION);
@@ -44,10 +45,18 @@ public class Revival {
 	@Mod.EventHandler
 	public void onPreInit(FMLPreInitializationEvent event) {
 		PROXY.onPreInit();
+		LOGGER.info("From the water to the land I");
+		LOGGER.info("Learn to swim and learn to stand I'm");
+		LOGGER.info("Found here by the hands of Neil Shubin");
 	}
 
 	@Mod.EventHandler
 	public void onInit(FMLInitializationEvent event) {
+		LOGGER.info("Carry me home and find the inner fish unknown");
+		LOGGER.info("Here on the cusp between fish and tetrapods");
+		LOGGER.info("Lie the skeletal remains in permafrost");
+		LOGGER.info("Amphibiously name them tiktaalik");
+		
 		PROXY.onInit();
 	}
 
