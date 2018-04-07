@@ -96,7 +96,12 @@ local.properties
 .worksheet
 nbproject/private/
 build/
-.classpath
-.project
-setup.bat
-libs/llibrary-1.7.2-1.10.2-dev.jar
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+-
+sources/Baubles-1.12-1.5.1-api.jar
+sources/Baubles-1.12-1.5.2-api.jar
+/sources/
