@@ -56,7 +56,7 @@ public class Revival {
 		LOGGER.info("Here on the cusp between fish and tetrapods");
 		LOGGER.info("Lie the skeletal remains in permafrost");
 		LOGGER.info("Amphibiously name them tiktaalik");
-		
+
 		PROXY.onInit();
 	}
 
