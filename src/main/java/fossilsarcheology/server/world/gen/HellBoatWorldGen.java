@@ -21,6 +21,7 @@ public class HellBoatWorldGen extends WorldGenerator {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean generate_r0(World world, Random rand, int x, int y, int z) {
 		BlockUtils.setBlock(world, x + 4, y + -2, z + 5, Blocks.NETHER_BRICK, 0, 3);
 		BlockUtils.setBlock(world, x + 5, y + -2, z + 5, Blocks.NETHER_BRICK, 0, 3);
@@ -1026,6 +1027,7 @@ public class HellBoatWorldGen extends WorldGenerator {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public boolean generate_r02_last(World world, Random rand, int x, int y, int z) {
 		BlockUtils.setBlock(world, x + 2, y + 2, z + 4, Blocks.REDSTONE_TORCH, 1, 3);
 		BlockUtils.setBlock(world, x + 2, y + 2, z + 6, Blocks.REDSTONE_TORCH, 1, 3);
@@ -1050,6 +1052,7 @@ public class HellBoatWorldGen extends WorldGenerator {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	protected void generateStructureCHESTContents(World world, Random rand, int i1, int j1, int k1, int i) {
 		BlockUtils.setChest(world, i1, j1, k1, Blocks.CHEST, i, 3, FALoot.HELL_BOAT);
 	}

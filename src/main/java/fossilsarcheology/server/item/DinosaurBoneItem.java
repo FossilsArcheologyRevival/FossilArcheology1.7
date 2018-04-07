@@ -21,6 +21,7 @@ public class DinosaurBoneItem extends Item implements SubtypeRenderedItem {
 		this.type = type;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public String getItemStackDisplayName(ItemStack stack) {
 		if (stack.getItemDamage() >= 0 && stack.getItemDamage() < DinosaurBoneType.values().length) {
