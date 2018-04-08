@@ -17,50 +17,50 @@ import java.util.Random;
 
 public class MessageHappyParticles extends AbstractMessage<MessageHappyParticles> {
 
-    public int dinosaurID;
+	public int dinosaurID;
 
-    public MessageHappyParticles(int dinosaurID) {
-        this.dinosaurID = dinosaurID;
-    }
+	public MessageHappyParticles(int dinosaurID) {
+		this.dinosaurID = dinosaurID;
+	}
 
-    public MessageHappyParticles() {
-    }
+	public MessageHappyParticles() {
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void onClientReceived(Minecraft client, MessageHappyParticles message, EntityPlayer player, MessageContext messageContext) {
-        Entity entity = player.world.getEntityByID(message.dinosaurID);
+	public static final void spawnParticle(Entity entity, Item item) {
+		Random rand = new Random();
+		double motionX = rand.nextGaussian() * 0.07D;
+		double motionY = rand.nextGaussian() * 0.07D;
+		double motionZ = rand.nextGaussian() * 0.07D;
+		float f = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxX - entity.getEntityBoundingBox().minX) + entity.getEntityBoundingBox().minX);
+		float f1 = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxY - entity.getEntityBoundingBox().minY) + entity.getEntityBoundingBox().minY);
+		float f2 = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxZ - entity.getEntityBoundingBox().minZ) + entity.getEntityBoundingBox().minZ);
+		Revival.PROXY.spawnPacketHeartParticles(entity.world, f, f1, f2, motionX, motionY, motionZ);
 
-        if (entity instanceof EntityPrehistoric) {
-            EntityPrehistoric prehistoric = (EntityPrehistoric) entity;
+	}
 
-        }
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void onClientReceived(Minecraft client, MessageHappyParticles message, EntityPlayer player, MessageContext messageContext) {
+		Entity entity = player.world.getEntityByID(message.dinosaurID);
 
-    public static final void spawnParticle(Entity entity, Item item) {
-        Random rand = new Random();
-        double motionX = rand.nextGaussian() * 0.07D;
-        double motionY = rand.nextGaussian() * 0.07D;
-        double motionZ = rand.nextGaussian() * 0.07D;
-        float f = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxX - entity.getEntityBoundingBox().minX) + entity.getEntityBoundingBox().minX);
-        float f1 = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxY - entity.getEntityBoundingBox().minY) + entity.getEntityBoundingBox().minY);
-        float f2 = (float) (rand.nextFloat() * (entity.getEntityBoundingBox().maxZ - entity.getEntityBoundingBox().minZ) + entity.getEntityBoundingBox().minZ);
-        Revival.PROXY.spawnPacketHeartParticles(entity.world, f, f1, f2, motionX, motionY, motionZ);
+		if (entity instanceof EntityPrehistoric) {
+			EntityPrehistoric prehistoric = (EntityPrehistoric) entity;
 
-    }
+		}
+	}
 
-    @Override
-    public void onServerReceived(MinecraftServer server, MessageHappyParticles message, EntityPlayer player, MessageContext messageContext) {
+	@Override
+	public void onServerReceived(MinecraftServer server, MessageHappyParticles message, EntityPlayer player, MessageContext messageContext) {
 
-    }
+	}
 
-    @Override
-    public void fromBytes(ByteBuf buf) {
-        dinosaurID = buf.readInt();
-    }
+	@Override
+	public void fromBytes(ByteBuf buf) {
+		dinosaurID = buf.readInt();
+	}
 
-    @Override
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(dinosaurID);
-    }
+	@Override
+	public void toBytes(ByteBuf buf) {
+		buf.writeInt(dinosaurID);
+	}
 }

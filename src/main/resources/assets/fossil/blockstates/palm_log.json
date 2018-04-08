@@ -1,8 +1,19 @@
 {
-    "variants": {
-        "axis=y":  { "model": "fossil:palm_log" },
-        "axis=z":   { "model": "fossil:palm_log", "x": 90 },
-        "axis=x":   { "model": "fossil:palm_log", "x": 90, "y": 90 },
-        "axis=none": { "model": "fossil:palm_bark" }
+  "variants": {
+    "axis=y": {
+      "model": "fossil:palm_log"
+    },
+    "axis=z": {
+      "model": "fossil:palm_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "fossil:palm_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=none": {
+      "model": "fossil:palm_bark"
     }
+  }
 }

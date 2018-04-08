@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=lower": { "model": "fossil:mutant_plant_1" },
-        "half=upper":    { "model":"fossil:mutant_plant_2" }
+  "variants": {
+    "half=lower": {
+      "model": "fossil:mutant_plant_1"
+    },
+    "half=upper": {
+      "model": "fossil:mutant_plant_2"
     }
+  }
 }

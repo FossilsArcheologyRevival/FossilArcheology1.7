@@ -181,12 +181,12 @@ public class ModelAllosaurus extends ModelPrehistoric {
 		this.resetToDefaultPose();
 		setRotationAngles(f, f1, f2, f3, f4, f5, (Entity) entity);
 		animator.setAnimation(allosaurus.SPEAK_ANIMATION);
-        animator.startKeyframe(10);
-        ModelUtils.rotate(animator, lowerJaw, 25, 0, 0);
+		animator.startKeyframe(10);
+		ModelUtils.rotate(animator, lowerJaw, 25, 0, 0);
 		ModelUtils.rotate(animator, head, -25, 0, 0);
 		ModelUtils.rotate(animator, neck, 20, 0, 0);
 		animator.endKeyframe();
-        animator.resetKeyframe(10);
+		animator.resetKeyframe(10);
 		animator.setAnimation(allosaurus.ATTACK_ANIMATION);
 		animator.startKeyframe(10);
 		ModelUtils.rotate(animator, neck, -15, 0, 0);
@@ -202,12 +202,12 @@ public class ModelAllosaurus extends ModelPrehistoric {
 
 	@Override
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
-		AdvancedModelRenderer[] tailParts = { this.tail1, this.tail2, this.tail3 };
-		AdvancedModelRenderer[] neckParts = { this.neck, this.head };
-		AdvancedModelRenderer[] leftArmParts = { this.leftUpperArm, this.leftLowerArm };
-		AdvancedModelRenderer[] rightArmParts = { this.rightUpperArm, this.rightLowerArm };
+		AdvancedModelRenderer[] tailParts = {this.tail1, this.tail2, this.tail3};
+		AdvancedModelRenderer[] neckParts = {this.neck, this.head};
+		AdvancedModelRenderer[] leftArmParts = {this.leftUpperArm, this.leftLowerArm};
+		AdvancedModelRenderer[] rightArmParts = {this.rightUpperArm, this.rightLowerArm};
 		this.blockMovement(f, f1, f2, f3, f4, f5, entity);
-		if(((EntityPrehistoric) entity).isSkeleton()){
+		if (((EntityPrehistoric) entity).isSkeleton()) {
 			return;
 		}
 		ModelUtils.faceTargetMod(neck, f3, f4, 0.5F);

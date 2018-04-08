@@ -15,40 +15,44 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class SkullBlock extends BlockHorizontal implements DefaultRenderedItem {
-    private boolean isActive;
+	private boolean isActive;
 
-    public SkullBlock(boolean isActive) {
-        super(Material.ROCK);
-        this.setTickRandomly(true);
-        this.isActive = isActive;
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        this.setCreativeTab(FATabRegistry.BLOCKS);
-        this.setUnlocalizedName(isActive ? "skullLantern" : "skullBlock");
-        this.setRegistryName(isActive ? "skullLantern" : "skullBlock");
-    }
+	public SkullBlock(boolean isActive) {
+		super(Material.ROCK);
+		this.setTickRandomly(true);
+		this.isActive = isActive;
+		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		this.setCreativeTab(FATabRegistry.BLOCKS);
+		this.setUnlocalizedName(isActive ? "skullLantern" : "skullBlock");
+		this.setRegistryName(isActive ? "skullLantern" : "skullBlock");
+	}
 
-    public IBlockState withRotation(IBlockState state, Rotation rot) {
-        return state.withProperty(FACING, rot.rotate((EnumFacing)state.getValue(FACING)));
-    }
+	@SuppressWarnings("deprecation")
+	public IBlockState withRotation(IBlockState state, Rotation rot) {
+		return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
+	}
 
-    public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
-    }
+	@SuppressWarnings("deprecation")
+	public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
+		return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
+	}
 
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
-    }
+	@SuppressWarnings("deprecation")
+	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+		return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+	}
 
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta));
-    }
+	@SuppressWarnings("deprecation")
+	public IBlockState getStateFromMeta(int meta) {
+		return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta));
+	}
 
-    public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing)state.getValue(FACING)).getHorizontalIndex();
-    }
+	public int getMetaFromState(IBlockState state) {
+		return ((EnumFacing) state.getValue(FACING)).getHorizontalIndex();
+	}
 
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[] {FACING});
-    }
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, new IProperty[]{FACING});
+	}
 
 }

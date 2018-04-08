@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=lower": { "model": "fossil:bennettitales_large_1" },
-        "half=upper":    { "model":"fossil:bennettitales_large_2" }
+  "variants": {
+    "half=lower": {
+      "model": "fossil:bennettitales_large_1"
+    },
+    "half=upper": {
+      "model": "fossil:bennettitales_large_2"
     }
+  }
 }

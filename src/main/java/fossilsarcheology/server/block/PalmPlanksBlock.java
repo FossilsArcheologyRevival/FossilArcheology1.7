@@ -8,14 +8,14 @@ import net.minecraft.block.material.Material;
 
 public class PalmPlanksBlock extends Block implements DefaultRenderedItem {
 
-    public PalmPlanksBlock() {
-        super(Material.WOOD);
-        setHardness(2.0F);
-        setResistance(5.0F);
-        setSoundType(SoundType.WOOD);
-        setUnlocalizedName("palm_planks");
-        this.setCreativeTab(FATabRegistry.BLOCKS);
-    }
+	public PalmPlanksBlock() {
+		super(Material.WOOD);
+		setHardness(2.0F);
+		setResistance(5.0F);
+		setSoundType(SoundType.WOOD);
+		setUnlocalizedName("palm_planks");
+		this.setCreativeTab(FATabRegistry.BLOCKS);
+	}
 
 }
 

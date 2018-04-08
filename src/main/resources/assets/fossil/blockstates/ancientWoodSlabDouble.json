@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "fossil:ancient_wood"
-        }
+  "variants": {
+    "normal": {
+      "model": "fossil:ancient_wood"
     }
+  }
 }

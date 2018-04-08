@@ -11,18 +11,18 @@ import org.lwjgl.opengl.GL11;
 
 public class RenderDinoEgg extends RenderLiving {
 
-    public RenderDinoEgg(RenderManager rendermanagerIn) {
-        super(rendermanagerIn , new ModelDinoEgg(), 0.25F);
-    }
+	public RenderDinoEgg(RenderManager rendermanagerIn) {
+		super(rendermanagerIn, new ModelDinoEgg(), 0.25F);
+	}
 
-    @Override
-    protected void preRenderCallback(EntityLivingBase entity, float f) {
-        GL11.glScalef(((EntityDinosaurEgg) entity).selfType.eggScale, ((EntityDinosaurEgg) entity).selfType.eggScale, ((EntityDinosaurEgg) entity).selfType.eggScale);
-    }
+	@Override
+	protected void preRenderCallback(EntityLivingBase entity, float f) {
+		GL11.glScalef(((EntityDinosaurEgg) entity).selfType.eggScale, ((EntityDinosaurEgg) entity).selfType.eggScale, ((EntityDinosaurEgg) entity).selfType.eggScale);
+	}
 
-    @Override
-    protected ResourceLocation getEntityTexture(Entity entity) {
-        return new ResourceLocation(((EntityDinosaurEgg) entity).getTexture());
-    }
+	@Override
+	protected ResourceLocation getEntityTexture(Entity entity) {
+		return new ResourceLocation(((EntityDinosaurEgg) entity).getTexture());
+	}
 
 }

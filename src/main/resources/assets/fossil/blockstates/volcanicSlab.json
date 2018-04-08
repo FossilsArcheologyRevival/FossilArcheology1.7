@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=bottom": { "model": "fossil:volcanic_slab" },
-        "half=top": { "model": "fossil:volcanic_upper_slab" }
+  "variants": {
+    "half=bottom": {
+      "model": "fossil:volcanic_slab"
+    },
+    "half=top": {
+      "model": "fossil:volcanic_upper_slab"
     }
+  }
 }

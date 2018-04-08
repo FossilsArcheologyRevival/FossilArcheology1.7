@@ -1,8 +1,16 @@
 {
-    "variants": {
-        "layer=0": { "model": "fossil:tempskya_1" },
-        "layer=1": { "model": "fossil:tempskya_2" },
-        "layer=2": { "model": "fossil:tempskya_3" },
-        "layer=3": { "model": "fossil:tempskya_4" }
+  "variants": {
+    "layer=0": {
+      "model": "fossil:tempskya_1"
+    },
+    "layer=1": {
+      "model": "fossil:tempskya_2"
+    },
+    "layer=2": {
+      "model": "fossil:tempskya_3"
+    },
+    "layer=3": {
+      "model": "fossil:tempskya_4"
     }
+  }
 }

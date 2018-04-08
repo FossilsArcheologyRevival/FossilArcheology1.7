@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "all": {
-            "model": "fossil:palm_leaves"
-        }
+  "variants": {
+    "all": {
+      "model": "fossil:palm_leaves"
     }
+  }
 }

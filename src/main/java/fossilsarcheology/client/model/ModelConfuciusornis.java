@@ -7,6 +7,7 @@ import net.ilexiconn.llibrary.client.model.tools.AdvancedModelRenderer;
 import net.ilexiconn.llibrary.server.animation.IAnimatedEntity;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+
 public class ModelConfuciusornis extends ModelPrehistoric {
 	public AdvancedModelRenderer rightLeg;
 	public AdvancedModelRenderer rightFoot;
@@ -182,115 +183,115 @@ public class ModelConfuciusornis extends ModelPrehistoric {
 		this.resetToDefaultPose();
 		setRotationAngles(f, f1, f2, f3, f4, f5, (Entity) entity);
 		animator.setAnimation(prehistoric.SPEAK_ANIMATION);
-        animator.startKeyframe(10);
-        ModelUtils.rotate(animator, lowerBeak, 29, 0, 0);
-        animator.endKeyframe();
-        animator.resetKeyframe(10);
+		animator.startKeyframe(10);
+		ModelUtils.rotate(animator, lowerBeak, 29, 0, 0);
+		animator.endKeyframe();
+		animator.resetKeyframe(10);
 	}
 
 	@Override
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
-        AdvancedModelRenderer[] neckParts = {this.neck, this.head};
-        AdvancedModelRenderer[] rightWingParts = {this.RightWing, this.RightWing2, this.RightWing3};
-        AdvancedModelRenderer[] leftWingParts = {this.leftWing, this.leftWing2, this.leftWing3};
-        AdvancedModelRenderer[] leftTailParts = {this.leftTail1, this.leftTail2, this.leftTail3, this.leftTailFan};
-        AdvancedModelRenderer[] rightTailParts = {this.rightTail1, this.rightTail2, this.rightTail3, this.rightTailFan};
-		if(((EntityPrehistoric) entity).isSkeleton()){
+		AdvancedModelRenderer[] neckParts = {this.neck, this.head};
+		AdvancedModelRenderer[] rightWingParts = {this.RightWing, this.RightWing2, this.RightWing3};
+		AdvancedModelRenderer[] leftWingParts = {this.leftWing, this.leftWing2, this.leftWing3};
+		AdvancedModelRenderer[] leftTailParts = {this.leftTail1, this.leftTail2, this.leftTail3, this.leftTailFan};
+		AdvancedModelRenderer[] rightTailParts = {this.rightTail1, this.rightTail2, this.rightTail3, this.rightTailFan};
+		if (((EntityPrehistoric) entity).isSkeleton()) {
 			return;
 		}
-        ModelUtils.faceTargetMod(neck, f3, f4, 0.5F);
-        ModelUtils.faceTargetMod(head, f3, f4, 0.5F);
-        float speed = 0.1F;
-        float speed2 = 0.6F;
-        float speed3 = 0.2F;
-        this.bob(body, speed, -0.3F, false, entity.ticksExisted, 1);
-        this.chainWave(neckParts, speed, 0.15F, 3, entity.ticksExisted, 1);
+		ModelUtils.faceTargetMod(neck, f3, f4, 0.5F);
+		ModelUtils.faceTargetMod(head, f3, f4, 0.5F);
+		float speed = 0.1F;
+		float speed2 = 0.6F;
+		float speed3 = 0.2F;
+		this.bob(body, speed, -0.3F, false, entity.ticksExisted, 1);
+		this.chainWave(neckParts, speed, 0.15F, 3, entity.ticksExisted, 1);
 		{
-            float sitProgress = ((EntityPrehistoric) entity).sitProgress;
-			sitAnimationRotationPrev(leftLeg, sitProgress, 0, 0, (float)Math.toRadians(1.0D));
-	        sitAnimationRotationPrev(leftWing2, sitProgress, (float)Math.toRadians(93.91D), 0, 0);
-	        sitAnimationRotationPrev(RightWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, 0);
-	        sitAnimationRotationPrev(rightTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-	        sitAnimationRotationPrev(leftWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, 0);
-	        sitAnimationRotationPrev(RightWing2, sitProgress, (float)Math.toRadians(93.91D), 0, 0);
-	        sitAnimationRotationPrev(leftTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-	        sitAnimationRotationPrev(upperBeak, sitProgress, (float)Math.toRadians(8.52D), 0, 0);
-	        sitAnimationRotationPrev(neck, sitProgress, (float)Math.toRadians(33.5D), 0, 0);
-	        sitAnimationRotationPrev(headFeathers, sitProgress, -((float)Math.toRadians(68.17D)), 0, 0);
-	        sitAnimationRotationPrev(leftTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-	        sitAnimationRotationPrev(rightTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-	        sitAnimationRotationPrev(body, sitProgress, -((float)Math.toRadians(7.83D)), 0, 0);
-	        sitAnimationRotationPrev(tailFeathers, sitProgress, (float)Math.toRadians(78.26D), 0, 0);
-	        sitAnimationRotationPrev(rightTail3, sitProgress, (float)Math.toRadians(5.0D), 0, 0);
-	        sitAnimationRotationPrev(leftWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-	        sitAnimationRotationPrev(head, sitProgress, -((float)Math.toRadians(18.0D)), 0, 0);
-	        sitAnimationRotationPrev(leftTail3, sitProgress, (float)Math.toRadians(5.0D), 0, 0);
-	        sitAnimationRotationPrev(rightLeg, sitProgress, 0, 0, (float)Math.toRadians(1.0D));
-	        sitAnimationRotationPrev(RightWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
+			float sitProgress = ((EntityPrehistoric) entity).sitProgress;
+			sitAnimationRotationPrev(leftLeg, sitProgress, 0, 0, (float) Math.toRadians(1.0D));
+			sitAnimationRotationPrev(leftWing2, sitProgress, (float) Math.toRadians(93.91D), 0, 0);
+			sitAnimationRotationPrev(RightWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, 0);
+			sitAnimationRotationPrev(rightTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(leftWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, 0);
+			sitAnimationRotationPrev(RightWing2, sitProgress, (float) Math.toRadians(93.91D), 0, 0);
+			sitAnimationRotationPrev(leftTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(upperBeak, sitProgress, (float) Math.toRadians(8.52D), 0, 0);
+			sitAnimationRotationPrev(neck, sitProgress, (float) Math.toRadians(33.5D), 0, 0);
+			sitAnimationRotationPrev(headFeathers, sitProgress, -((float) Math.toRadians(68.17D)), 0, 0);
+			sitAnimationRotationPrev(leftTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(rightTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(body, sitProgress, -((float) Math.toRadians(7.83D)), 0, 0);
+			sitAnimationRotationPrev(tailFeathers, sitProgress, (float) Math.toRadians(78.26D), 0, 0);
+			sitAnimationRotationPrev(rightTail3, sitProgress, (float) Math.toRadians(5.0D), 0, 0);
+			sitAnimationRotationPrev(leftWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(head, sitProgress, -((float) Math.toRadians(18.0D)), 0, 0);
+			sitAnimationRotationPrev(leftTail3, sitProgress, (float) Math.toRadians(5.0D), 0, 0);
+			sitAnimationRotationPrev(rightLeg, sitProgress, 0, 0, (float) Math.toRadians(1.0D));
+			sitAnimationRotationPrev(RightWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
 		}
 		{
-            float sitProgress = ((EntityPrehistoric) entity).sleepProgress;
-            sitAnimationRotationPrev(tailFeathers, sitProgress, (float)Math.toRadians(78.26D), 0, 0);
-            sitAnimationRotationPrev(neck, sitProgress, (float)Math.toRadians(62.61D), (float)Math.toRadians(15.65D), (float)Math.toRadians(2.61D));
-            sitAnimationRotationPrev(RightWing2, sitProgress, (float)Math.toRadians(93.91D), 0, 0);
-            sitAnimationRotationPrev(leftWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-            sitAnimationRotationPrev(leftTail3, sitProgress, (float)Math.toRadians(5.0D), 0, 0);
-            sitAnimationRotationPrev(leftTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-            sitAnimationRotationPrev(rightTail3, sitProgress, (float)Math.toRadians(5.0D), 0, 0);
-            sitAnimationRotationPrev(body, sitProgress, -((float)Math.toRadians(7.83D)), 0, 0);
-            sitAnimationRotationPrev(upperBeak, sitProgress, (float)Math.toRadians(8.52D), 0, 0);
-            sitAnimationRotationPrev(rightTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-            sitAnimationRotationPrev(headFeathers, sitProgress, -((float)Math.toRadians(68.17D)), 0, 0);
-            sitAnimationRotationPrev(RightWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, (float)Math.toRadians(7.83D));
-            sitAnimationRotationPrev(rightTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-            sitAnimationRotationPrev(leftLeg, sitProgress, 0, 0, (float)Math.toRadians(1.0D));
-            sitAnimationRotationPrev(leftWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, -((float)Math.toRadians(15.65D)));
-            sitAnimationRotationPrev(leftTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-            sitAnimationRotationPrev(RightWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-            sitAnimationRotationPrev(leftWing2, sitProgress, (float)Math.toRadians(93.91D), 0, 0);
-            sitAnimationRotationPrev(rightLeg, sitProgress, 0, 0, (float)Math.toRadians(1.0D));
-            sitAnimationRotationPrev(head, sitProgress, -((float)Math.toRadians(18.0D)), -((float)Math.toRadians(52.17D)), (float)Math.toRadians(78.26D));
+			float sitProgress = ((EntityPrehistoric) entity).sleepProgress;
+			sitAnimationRotationPrev(tailFeathers, sitProgress, (float) Math.toRadians(78.26D), 0, 0);
+			sitAnimationRotationPrev(neck, sitProgress, (float) Math.toRadians(62.61D), (float) Math.toRadians(15.65D), (float) Math.toRadians(2.61D));
+			sitAnimationRotationPrev(RightWing2, sitProgress, (float) Math.toRadians(93.91D), 0, 0);
+			sitAnimationRotationPrev(leftWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(leftTail3, sitProgress, (float) Math.toRadians(5.0D), 0, 0);
+			sitAnimationRotationPrev(leftTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(rightTail3, sitProgress, (float) Math.toRadians(5.0D), 0, 0);
+			sitAnimationRotationPrev(body, sitProgress, -((float) Math.toRadians(7.83D)), 0, 0);
+			sitAnimationRotationPrev(upperBeak, sitProgress, (float) Math.toRadians(8.52D), 0, 0);
+			sitAnimationRotationPrev(rightTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(headFeathers, sitProgress, -((float) Math.toRadians(68.17D)), 0, 0);
+			sitAnimationRotationPrev(RightWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, (float) Math.toRadians(7.83D));
+			sitAnimationRotationPrev(rightTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(leftLeg, sitProgress, 0, 0, (float) Math.toRadians(1.0D));
+			sitAnimationRotationPrev(leftWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, -((float) Math.toRadians(15.65D)));
+			sitAnimationRotationPrev(leftTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(RightWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(leftWing2, sitProgress, (float) Math.toRadians(93.91D), 0, 0);
+			sitAnimationRotationPrev(rightLeg, sitProgress, 0, 0, (float) Math.toRadians(1.0D));
+			sitAnimationRotationPrev(head, sitProgress, -((float) Math.toRadians(18.0D)), -((float) Math.toRadians(52.17D)), (float) Math.toRadians(78.26D));
 		}
 		{
-            float sitProgress = ((EntityPrehistoricFlying) entity).flyProgress;
-            sitAnimationRotationPrev(rightTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-            sitAnimationRotationPrev(RightWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, (float)Math.toRadians(90.0D));
-            sitAnimationRotationPrev(neck, sitProgress, (float)Math.toRadians(80.0D), 0, 0);
-            sitAnimationRotationPrev(rightTail2, sitProgress, (float)Math.toRadians(4.22D), 0, 0);
-            sitAnimationRotationPrev(leftWing, sitProgress, -((float)Math.toRadians(8.0D)), 0, -((float)Math.toRadians(90.0D)));
-            sitAnimationRotationPrev(rightTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-            sitAnimationRotationPrev(leftTail2, sitProgress, (float)Math.toRadians(4.22D), 0, 0);
-            sitAnimationRotationPrev(tailFeathers, sitProgress, (float)Math.toRadians(78.26D), 0, 0);
-            sitAnimationRotationPrev(upperBeak, sitProgress, (float)Math.toRadians(8.52D), 0, 0);
-            sitAnimationRotationPrev(head, sitProgress, -((float)Math.toRadians(70.0D)), 0, 0);
-            sitAnimationRotationPrev(leftTailFan, sitProgress, (float)Math.toRadians(1.0D), 0, 0);
-            sitAnimationRotationPrev(headFeathers, sitProgress, -((float)Math.toRadians(68.17D)), 0, 0);
-            sitAnimationRotationPrev(RightWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-            sitAnimationRotationPrev(leftTail1, sitProgress, -((float)Math.toRadians(3.38D)), 0, 0);
-            sitAnimationRotationPrev(leftLeg, sitProgress, (float)Math.toRadians(65.0D), 0, (float)Math.toRadians(1.0D));
-            sitAnimationRotationPrev(leftWing2, sitProgress, (float)Math.toRadians(8.0D), 0, 0);
-            sitAnimationRotationPrev(RightWing2, sitProgress, (float)Math.toRadians(8.0D), 0, 0);
-            sitAnimationRotationPrev(leftWing3, sitProgress, (float)Math.toRadians(5.22D), 0, 0);
-            sitAnimationRotationPrev(rightLeg, sitProgress, (float)Math.toRadians(65.0D), 0, (float)Math.toRadians(1.0D));
-            if (sitProgress >= 10) {
-                this.chainFlap(rightWingParts, speed3, 0.6F, 0, f, f1);
-                this.chainFlap(leftWingParts, speed3, -0.6F, 0, f, f1);
-                this.swing(RightWing, speed3, 0.3F, false, 0F, 0F, f, f1);
-                this.swing(leftWing, speed3, 0.3F, true, 0F, 0F, f, f1);
-            } else {
-                this.walk(leftLeg, speed2, 1.9F, false, 0F, 0F, f, f1);
-                this.walk(rightLeg, speed2, 1.9F, true, 0F, 0F, f, f1);
-                this.walk(leftFoot, speed2, 1.9F, true, 0.3F, 0F, f, f1);
-                this.walk(rightFoot, speed2, 1.9F, false, 0.3F, 0F, f, f1);
-                this.chainWave(rightTailParts, speed2, 0.05F, -3, f, f1);
-                this.chainSwing(rightTailParts, speed2, 0.15F, -3, f, f1);
-                this.chainWave(leftTailParts, speed2, 0.05F, -3, f, f1);
-                this.chainSwing(leftTailParts, speed2, 0.15F, -3, f, f1);
-                this.chainWave(neckParts, speed2, 0.1F, -3, f, f1);
-                this.chainWave(neckParts, speed, 0.4F, -3, f, f1);
-            }
+			float sitProgress = ((EntityPrehistoricFlying) entity).flyProgress;
+			sitAnimationRotationPrev(rightTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(RightWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, (float) Math.toRadians(90.0D));
+			sitAnimationRotationPrev(neck, sitProgress, (float) Math.toRadians(80.0D), 0, 0);
+			sitAnimationRotationPrev(rightTail2, sitProgress, (float) Math.toRadians(4.22D), 0, 0);
+			sitAnimationRotationPrev(leftWing, sitProgress, -((float) Math.toRadians(8.0D)), 0, -((float) Math.toRadians(90.0D)));
+			sitAnimationRotationPrev(rightTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(leftTail2, sitProgress, (float) Math.toRadians(4.22D), 0, 0);
+			sitAnimationRotationPrev(tailFeathers, sitProgress, (float) Math.toRadians(78.26D), 0, 0);
+			sitAnimationRotationPrev(upperBeak, sitProgress, (float) Math.toRadians(8.52D), 0, 0);
+			sitAnimationRotationPrev(head, sitProgress, -((float) Math.toRadians(70.0D)), 0, 0);
+			sitAnimationRotationPrev(leftTailFan, sitProgress, (float) Math.toRadians(1.0D), 0, 0);
+			sitAnimationRotationPrev(headFeathers, sitProgress, -((float) Math.toRadians(68.17D)), 0, 0);
+			sitAnimationRotationPrev(RightWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(leftTail1, sitProgress, -((float) Math.toRadians(3.38D)), 0, 0);
+			sitAnimationRotationPrev(leftLeg, sitProgress, (float) Math.toRadians(65.0D), 0, (float) Math.toRadians(1.0D));
+			sitAnimationRotationPrev(leftWing2, sitProgress, (float) Math.toRadians(8.0D), 0, 0);
+			sitAnimationRotationPrev(RightWing2, sitProgress, (float) Math.toRadians(8.0D), 0, 0);
+			sitAnimationRotationPrev(leftWing3, sitProgress, (float) Math.toRadians(5.22D), 0, 0);
+			sitAnimationRotationPrev(rightLeg, sitProgress, (float) Math.toRadians(65.0D), 0, (float) Math.toRadians(1.0D));
+			if (sitProgress >= 10) {
+				this.chainFlap(rightWingParts, speed3, 0.6F, 0, f, f1);
+				this.chainFlap(leftWingParts, speed3, -0.6F, 0, f, f1);
+				this.swing(RightWing, speed3, 0.3F, false, 0F, 0F, f, f1);
+				this.swing(leftWing, speed3, 0.3F, true, 0F, 0F, f, f1);
+			} else {
+				this.walk(leftLeg, speed2, 1.9F, false, 0F, 0F, f, f1);
+				this.walk(rightLeg, speed2, 1.9F, true, 0F, 0F, f, f1);
+				this.walk(leftFoot, speed2, 1.9F, true, 0.3F, 0F, f, f1);
+				this.walk(rightFoot, speed2, 1.9F, false, 0.3F, 0F, f, f1);
+				this.chainWave(rightTailParts, speed2, 0.05F, -3, f, f1);
+				this.chainSwing(rightTailParts, speed2, 0.15F, -3, f, f1);
+				this.chainWave(leftTailParts, speed2, 0.05F, -3, f, f1);
+				this.chainSwing(leftTailParts, speed2, 0.15F, -3, f, f1);
+				this.chainWave(neckParts, speed2, 0.1F, -3, f, f1);
+				this.chainWave(neckParts, speed, 0.4F, -3, f, f1);
+			}
 		}
-        ((EntityPrehistoric) entity).chainBuffer.applyChainSwingBuffer((ModelRenderer[]) rightTailParts);
-        ((EntityPrehistoric) entity).chainBuffer.applyChainSwingBuffer((ModelRenderer[]) leftTailParts);
+		((EntityPrehistoric) entity).chainBuffer.applyChainSwingBuffer((ModelRenderer[]) rightTailParts);
+		((EntityPrehistoric) entity).chainBuffer.applyChainSwingBuffer((ModelRenderer[]) leftTailParts);
 	}
 }

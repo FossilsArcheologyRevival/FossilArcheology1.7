@@ -581,12 +581,12 @@
     ]
   },
   "dryosaurus_death": {
-  "category": "neutral",
-  "sounds": [
-    "fossil:prehistoric/dryosaurus_death1",
-    "fossil:prehistoric/dryosaurus_death2"
-  ]
-},
+    "category": "neutral",
+    "sounds": [
+      "fossil:prehistoric/dryosaurus_death1",
+      "fossil:prehistoric/dryosaurus_death2"
+    ]
+  },
   "dryosaurus_hurt": {
     "category": "neutral",
     "sounds": [
@@ -649,19 +649,18 @@
     ]
   },
   "parasaurolophus_death": {
-  "category": "neutral",
-  "sounds": [
-    "fossil:prehistoric/parasaurolophus_death1",
-    "fossil:prehistoric/parasaurolophus_death2"
-  ]
-},
+    "category": "neutral",
+    "sounds": [
+      "fossil:prehistoric/parasaurolophus_death1",
+      "fossil:prehistoric/parasaurolophus_death2"
+    ]
+  },
   "parasaurolophus_hurt": {
     "category": "neutral",
     "sounds": [
       "fossil:prehistoric/parasaurolophus_hurt1",
       "fossil:prehistoric/parasaurolophus_hurt2",
       "fossil:prehistoric/parasaurolophus_hurt3"
-
     ]
   },
   "parasaurolophus_living": {

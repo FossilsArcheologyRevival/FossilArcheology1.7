@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "fossil:blocks/plants/plant_osmunda"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fossil:blocks/plants/plant_osmunda"
+  }
 }
