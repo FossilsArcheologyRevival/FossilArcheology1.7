@@ -31,18 +31,16 @@ public class AnuPortalBlock extends Block {
         this.setUnlocalizedName("anu_portal");
     }
 
-<<<<<<< HEAD
-	@SuppressWarnings("deprecation")
-	@Override
-	public boolean isOpaqueCube(IBlockState state) {
-		return false;
-	}
-=======
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
+    public boolean isOpaqueCube(IBlockState state)
+    {
         return false;
     }
->>>>>>> parent of 9902da5f... why are there two build.gradle files?
+
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return null;
