@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld_rod",
-  "textures": {
-    "layer0": "fossil:items/whip"
-  }
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "fossil:items/whip"
+    }
 }

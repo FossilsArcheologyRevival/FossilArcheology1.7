@@ -1,7 +1,7 @@
 {
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "fossil:blocks/ancient_wood_pillar_top",
-    "side": "fossil:blocks/ancient_wood_pillar"
-  }
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "fossil:blocks/ancient_wood_pillar_top",
+        "side": "fossil:blocks/ancient_wood_pillar"
+    }
 }

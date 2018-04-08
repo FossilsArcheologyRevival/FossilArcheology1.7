@@ -1,151 +1,39 @@
 {
-  "parent": "block/block",
-  "textures": {
-    "particle": "fossil:blocks/cultivate/cultivate_top",
-    "0": "fossil:blocks/cultivate/cultivate_bottom_side",
-    "1": "fossil:blocks/cultivate/cultivate_bottom",
-    "2": "fossil:blocks/cultivate/cultivate_side",
-    "3": "fossil:blocks/cultivate/cultivate_top",
-    "4": "fossil:blocks/blank"
-  },
-  "elements": [
-    {
-      "name": "bottom",
-      "from": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "to": [
-        16.0,
-        2.0,
-        16.0
-      ],
-      "faces": {
-        "north": {
-          "texture": "#0",
-          "uv": [
-            0.0,
-            14.0,
-            16.0,
-            16.0
-          ]
-        },
-        "east": {
-          "texture": "#0",
-          "uv": [
-            0.0,
-            14.0,
-            16.0,
-            16.0
-          ]
-        },
-        "south": {
-          "texture": "#0",
-          "uv": [
-            0.0,
-            14.0,
-            16.0,
-            16.0
-          ]
-        },
-        "west": {
-          "texture": "#0",
-          "uv": [
-            0.0,
-            14.0,
-            16.0,
-            16.0
-          ]
-        },
-        "up": {
-          "texture": "#1",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            16.0
-          ]
-        },
-        "down": {
-          "texture": "#1",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            16.0
-          ]
-        }
-      }
+    "parent": "block/block",
+    "textures": {
+        "particle": "fossil:blocks/cultivate/cultivate_top",
+        "0": "fossil:blocks/cultivate/cultivate_bottom_side",
+        "1": "fossil:blocks/cultivate/cultivate_bottom",
+        "2": "fossil:blocks/cultivate/cultivate_side",
+        "3": "fossil:blocks/cultivate/cultivate_top",
+        "4": "fossil:blocks/blank"
     },
-    {
-      "name": "top",
-      "from": [
-        0.0,
-        2.0,
-        0.0
-      ],
-      "to": [
-        16.0,
-        16.0,
-        16.0
-      ],
-      "faces": {
-        "north": {
-          "texture": "#2",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            14.0
-          ]
+    "elements": [
+        {
+            "name": "bottom",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 2.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 14.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 14.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 14.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 14.0, 16.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
         },
-        "east": {
-          "texture": "#2",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            14.0
-          ]
-        },
-        "south": {
-          "texture": "#2",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            14.0
-          ]
-        },
-        "west": {
-          "texture": "#2",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            14.0
-          ]
-        },
-        "up": {
-          "texture": "#3",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            16.0
-          ]
-        },
-        "down": {
-          "texture": "#4",
-          "uv": [
-            0.0,
-            0.0,
-            16.0,
-            16.0
-          ]
+        {
+            "name": "top",
+            "from": [ 0.0, 2.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "east": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "south": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "west": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 14.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#4", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
         }
-      }
-    }
-  ]
+    ]
 }

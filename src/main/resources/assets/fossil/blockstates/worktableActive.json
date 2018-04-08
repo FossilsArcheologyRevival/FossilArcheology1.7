@@ -1,19 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "fossil:worktableActive"
-    },
-    "facing=south": {
-      "model": "fossil:worktableActive",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "fossil:worktableActive",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "fossil:worktableActive",
-      "y": 90
-    }
+    "facing=north": { "model": "fossil:worktableActive" },
+    "facing=south": { "model": "fossil:worktableActive", "y": 180 },
+    "facing=west":  { "model": "fossil:worktableActive", "y": 270 },
+    "facing=east":  { "model": "fossil:worktableActive", "y": 90 }
   }
 }

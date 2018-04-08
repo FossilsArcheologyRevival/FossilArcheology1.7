@@ -1,10 +1,6 @@
 {
-  "variants": {
-    "half=lower": {
-      "model": "fossil:paleopanax_1"
-    },
-    "half=upper": {
-      "model": "fossil:paleopanax_2"
+    "variants": {
+        "half=lower": { "model": "fossil:paleopanax_1" },
+        "half=upper":    { "model":"fossil:paleopanax_2" }
     }
-  }
 }

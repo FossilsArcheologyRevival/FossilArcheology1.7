@@ -1,6 +1,6 @@
 {
-  "parent": "block/rail_curved",
-  "textures": {
-    "rail": "fossil:blocks/slimetrail_turned"
-  }
+    "parent": "block/rail_curved",
+    "textures": {
+        "rail": "fossil:blocks/slimetrail_turned"
+    }
 }

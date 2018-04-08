@@ -1,7 +1,7 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "fossil:items/skull_stick"
-  }
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "fossil:items/skull_stick"
+    }
 }
 

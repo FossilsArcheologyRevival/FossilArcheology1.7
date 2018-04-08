@@ -1,10 +1,10 @@
 {
-  "parent": "fossil:block/orientable2",
-  "textures": {
-    "top": "fossil:blocks/bubble_blower_top",
-    "bottom": "fossil:blocks/bubble_blower_bottom",
-    "front": "fossil:blocks/bubble_blower_front",
-    "side": "fossil:blocks/bubble_blower_side",
-    "back": "fossil:blocks/bubble_blower_back"
-  }
+    "parent": "fossil:block/orientable2",
+    "textures": {
+        "top": "fossil:blocks/bubble_blower_top",
+        "bottom": "fossil:blocks/bubble_blower_bottom",
+        "front": "fossil:blocks/bubble_blower_front",
+        "side": "fossil:blocks/bubble_blower_side",
+        "back": "fossil:blocks/bubble_blower_back"
+    }
 }

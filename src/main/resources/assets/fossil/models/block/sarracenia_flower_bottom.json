@@ -1,6 +1,6 @@
 {
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fossil:blocks/plants/sarracenia_bottom"
-  }
+    "parent": "block/cross",
+    "textures": {
+        "cross": "fossil:blocks/plants/sarracenia_bottom"
+    }
 }

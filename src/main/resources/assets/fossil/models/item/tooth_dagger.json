@@ -1,7 +1,7 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "fossil:items/tooth_dagger"
-  }
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "fossil:items/tooth_dagger"
+    }
 }
 

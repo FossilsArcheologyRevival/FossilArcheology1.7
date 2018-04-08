@@ -1,8 +1,8 @@
 {
-  "parent": "block/half_slab",
-  "textures": {
-    "bottom": "fossil:blocks/palm_planks",
-    "top": "fossil:blocks/palm_planks",
-    "side": "fossil:blocks/palm_planks"
-  }
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "fossil:blocks/palm_planks",
+        "top": "fossil:blocks/palm_planks",
+        "side": "fossil:blocks/palm_planks"
+    }
 }

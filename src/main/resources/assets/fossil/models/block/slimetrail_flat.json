@@ -1,6 +1,6 @@
 {
-  "parent": "block/rail_flat",
-  "textures": {
-    "rail": "fossil:blocks/slimetrail"
-  }
+    "parent": "block/rail_flat",
+    "textures": {
+        "rail": "fossil:blocks/slimetrail"
+    }
 }

@@ -22,6 +22,7 @@ import javax.annotation.Nullable;
 
 public class DrumBlock extends Block implements DefaultRenderedItem {
 
+<<<<<<< HEAD
 	public static final PropertyInteger DRUMS = PropertyInteger.create("drums", 0, 2);
 
 	public DrumBlock() {
@@ -56,5 +57,40 @@ public class DrumBlock extends Block implements DefaultRenderedItem {
 	protected BlockStateContainer createBlockState() {
 		return new BlockStateContainer(this, new IProperty[]{DRUMS});
 	}
+=======
+    public static final PropertyInteger DRUMS = PropertyInteger.create("drums", 0, 2);
+
+    public DrumBlock() {
+        super(Material.WOOD);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(DRUMS, Integer.valueOf(0)));
+        this.setTickRandomly(true);
+        this.setUnlocalizedName("drum");
+        this.setSoundType(SoundType.WOOD);
+        this.setCreativeTab(FATabRegistry.BLOCKS);
+    }
+
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+            int i = ((Integer)state.getValue(DRUMS)).intValue();
+            if(i < 2){
+                worldIn.setBlockState(pos, state.withProperty(DRUMS, Integer.valueOf(i + 1)), 3);
+            }else{
+                worldIn.setBlockState(pos, state.withProperty(DRUMS, Integer.valueOf(0)), 3);
+            }
+        worldIn.playSound(player, pos, FASoundRegistry.DRUM_SINGLE, SoundCategory.BLOCKS, 1, 1);
+        return true;
+    }
+
+    public IBlockState getStateFromMeta(int meta) {
+        return this.getDefaultState().withProperty(DRUMS, Integer.valueOf(meta));
+    }
+
+    public int getMetaFromState(IBlockState state) {
+        return ((Integer)state.getValue(DRUMS)).intValue();
+    }
+
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, new IProperty[] {DRUMS});
+    }
+>>>>>>> parent of 9902da5f... why are there two build.gradle files?
 
 }

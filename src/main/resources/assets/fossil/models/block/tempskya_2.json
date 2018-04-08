@@ -1,6 +1,6 @@
 {
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fossil:blocks/plants/plant_tempskya_2"
-  }
+    "parent": "block/cross",
+    "textures": {
+        "cross": "fossil:blocks/plants/plant_tempskya_2"
+    }
 }

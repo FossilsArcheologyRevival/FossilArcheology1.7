@@ -1,19 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "fossil:skull_lantern"
-    },
-    "facing=south": {
-      "model": "fossil:skull_lantern",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "fossil:skull_lantern",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "fossil:skull_lantern",
-      "y": 90
-    }
+    "facing=north": { "model": "fossil:skull_lantern" },
+    "facing=south": { "model": "fossil:skull_lantern", "y": 180 },
+    "facing=west":  { "model": "fossil:skull_lantern", "y": 270 },
+    "facing=east":  { "model": "fossil:skull_lantern", "y": 90 }
   }
 }

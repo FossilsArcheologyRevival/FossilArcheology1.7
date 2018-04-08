@@ -1,52 +1,20 @@
 {
-  "variants": {
-    "growth=0,type=0": {
-      "model": "fossil:fern_1s1"
-    },
-    "growth=1,type=0": {
-      "model": "fossil:fern_1s2"
-    },
-    "growth=2,type=0": {
-      "model": "fossil:fern_1s3"
-    },
-    "growth=3,type=0": {
-      "model": "fossil:fern_1s4"
-    },
-    "growth=4,type=0": {
-      "model": "fossil:fern_1s5"
-    },
-    "growth=5,type=0": {
-      "model": "fossil:fern_1s6"
-    },
-    "growth=6,type=0": {
-      "model": "fossil:fern_1s7"
-    },
-    "growth=7,type=0": {
-      "model": "fossil:fern_1s8"
-    },
-    "growth=0,type=1": {
-      "model": "fossil:fern_2s1"
-    },
-    "growth=1,type=1": {
-      "model": "fossil:fern_2s2"
-    },
-    "growth=2,type=1": {
-      "model": "fossil:fern_2s3"
-    },
-    "growth=3,type=1": {
-      "model": "fossil:fern_2s4"
-    },
-    "growth=4,type=1": {
-      "model": "fossil:fern_2s5"
-    },
-    "growth=5,type=1": {
-      "model": "fossil:fern_2s5"
-    },
-    "growth=6,type=1": {
-      "model": "fossil:fern_2s5"
-    },
-    "growth=7,type=1": {
-      "model": "fossil:fern_2s5"
+    "variants": {
+        "growth=0,type=0":  { "model": "fossil:fern_1s1"},
+        "growth=1,type=0":  { "model": "fossil:fern_1s2"},
+        "growth=2,type=0": { "model": "fossil:fern_1s3"},
+        "growth=3,type=0": { "model": "fossil:fern_1s4"},
+        "growth=4,type=0":  { "model": "fossil:fern_1s5"},
+        "growth=5,type=0":  { "model": "fossil:fern_1s6"},
+        "growth=6,type=0": { "model": "fossil:fern_1s7"},
+        "growth=7,type=0": { "model": "fossil:fern_1s8"},
+        "growth=0,type=1":  { "model": "fossil:fern_2s1"},
+        "growth=1,type=1":  { "model": "fossil:fern_2s2"},
+        "growth=2,type=1": { "model": "fossil:fern_2s3"},
+        "growth=3,type=1": { "model": "fossil:fern_2s4"},
+        "growth=4,type=1":  { "model": "fossil:fern_2s5"},
+        "growth=5,type=1":  { "model": "fossil:fern_2s5"},
+        "growth=6,type=1": { "model": "fossil:fern_2s5"},
+        "growth=7,type=1": { "model": "fossil:fern_2s5"}
     }
-  }
 }

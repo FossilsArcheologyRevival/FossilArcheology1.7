@@ -1,6 +1,6 @@
 {
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fossil:blocks/plants/plant_dillhoffia"
-  }
+    "parent": "block/cross",
+    "textures": {
+        "cross": "fossil:blocks/plants/plant_dillhoffia"
+    }
 }

@@ -23,66 +23,85 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class AnubiteStatueBlock extends BlockContainer implements DefaultRenderedItem, BlockEntity {
-	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+    public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
-	protected AnubiteStatueBlock() {
-		super(Material.ROCK);
-		this.setCreativeTab(FATabRegistry.BLOCKS);
-		this.setTickRandomly(true);
-		this.setBlockUnbreakable();
-		this.setResistance(60000000.0F);
-		this.setUnlocalizedName("anubite_statue");
-	}
+    protected AnubiteStatueBlock() {
+        super(Material.ROCK);
+        this.setCreativeTab(FATabRegistry.BLOCKS);
+        this.setTickRandomly(true);
+        this.setBlockUnbreakable();
+        this.setResistance(60000000.0F);
+        this.setUnlocalizedName("anubite_statue");
+    }
 
+<<<<<<< HEAD
 	@SuppressWarnings("deprecation")
 	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
 		return super.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 	}
+=======
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+        return super.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+    }
+>>>>>>> parent of 9902da5f... why are there two build.gradle files?
 
-	@Override
-	@SideOnly(Side.CLIENT)
-	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.CUTOUT;
-	}
+    @Override
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer() {
+        return BlockRenderLayer.CUTOUT;
+    }
 
-	@Override
-	public EnumBlockRenderType getRenderType(IBlockState state) {
-		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
-	}
+    @Override
+    public EnumBlockRenderType getRenderType(IBlockState state) {
+        return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
+    }
 
+<<<<<<< HEAD
 	@SuppressWarnings("deprecation")
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta));
 	}
+=======
+    @Override
+    public IBlockState getStateFromMeta(int meta) {
+        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta));
+    }
+>>>>>>> parent of 9902da5f... why are there two build.gradle files?
 
-	@Override
-	public int getMetaFromState(IBlockState state) {
-		return state.getValue(FACING).getHorizontalIndex();
-	}
+    @Override
+    public int getMetaFromState(IBlockState state) {
+        return state.getValue(FACING).getHorizontalIndex();
+    }
 
-	@Override
-	protected BlockStateContainer createBlockState() {
-		return new BlockStateContainer(this, new IProperty[]{FACING});
-	}
+    @Override
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, new IProperty[]{FACING});
+    }
 
-	@Deprecated
-	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return new AxisAlignedBB(0F, 0.0F, 0F, 1F, 1.9F, 1);
-	}
+    @Deprecated
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        return new AxisAlignedBB(0F, 0.0F, 0F, 1F, 1.9F, 1);
+    }
 
+<<<<<<< HEAD
 	@SuppressWarnings("deprecation")
 	public boolean isOpaqueCube(IBlockState state) {
 		return false;
 	}
+=======
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
+>>>>>>> parent of 9902da5f... why are there two build.gradle files?
 
-	@Override
-	public TileEntity createNewTileEntity(World worldIn, int meta) {
-		return new TileEntityAnubiteStatue();
-	}
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TileEntityAnubiteStatue();
+    }
 
-	@Override
-	public Class<? extends TileEntity> getEntity() {
-		return TileEntityAnubiteStatue.class;
-	}
+    @Override
+    public Class<? extends TileEntity> getEntity() {
+        return TileEntityAnubiteStatue.class;
+    }
 }

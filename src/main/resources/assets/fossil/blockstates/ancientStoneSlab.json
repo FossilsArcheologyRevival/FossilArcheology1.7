@@ -1,10 +1,6 @@
 {
-  "variants": {
-    "half=bottom": {
-      "model": "fossil:ancient_stone_slab"
-    },
-    "half=top": {
-      "model": "fossil:ancient_stone_upper_slab"
+    "variants": {
+        "half=bottom": { "model": "fossil:ancient_stone_slab" },
+        "half=top": { "model": "fossil:ancient_stone_upper_slab" }
     }
-  }
 }

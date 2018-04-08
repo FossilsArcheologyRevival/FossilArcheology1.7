@@ -1,7 +1,7 @@
 {
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "fossil:blocks/palm_log_top",
-    "side": "fossil:blocks/palm_log"
-  }
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "fossil:blocks/palm_log_top",
+        "side": "fossil:blocks/palm_log"
+    }
 }
