@@ -19,8 +19,6 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Revival.MODID, name = "Fossils and Archeology Revival", version = Revival.VERSION, dependencies = "required-after:llibrary@[" + Revival.LLIBRARY_VERSION + ",)")
 public class Revival {
-<<<<<<< HEAD
-	//
 	public static final String MODID = "fossil";
 	public static final String VERSION = "8.0.0-develop";
 	public static final ReleaseType RELEASE_TYPE = ReleaseType.parseVersion(VERSION);
@@ -67,44 +65,4 @@ public class Revival {
 	public void onPostInit(FMLPostInitializationEvent event) {
 		PROXY.onPostInit();
 	}
-=======
-    public static final String MODID = "fossil";
-    public static final String VERSION = "8.0.0-develop";
-    public static final ReleaseType RELEASE_TYPE = ReleaseType.parseVersion(VERSION);
-    public static final String LLIBRARY_VERSION = "1.7.4";
-
-    public static final Logger LOGGER = LogManager.getLogger("fossils");
-
-    @SidedProxy(clientSide = "fossilsarcheology.client.ClientProxy", serverSide = "fossilsarcheology.server.ServerProxy")
-    public static ServerProxy PROXY;
-    @NetworkWrapper({MessageFoodParticles.class, MessageSetDay.class, MessageHappyParticles.class, MessageUpdateEgg.class, MessageRollBall.class})
-    public static SimpleNetworkWrapper NETWORK_WRAPPER;
-    @Config
-    public static FossilConfig CONFIG;
-
-    @Mod.Instance(MODID)
-    public static Revival INSTANCE;
-    public static Object PEDIA_OBJECT;
-
-    public static void debug(String message) {
-        if (RELEASE_TYPE.enableDebugging()) {
-            LOGGER.debug(message);
-        }
-    }
-
-    @Mod.EventHandler
-    public void onPreInit(FMLPreInitializationEvent event) {
-        PROXY.onPreInit();
-    }
-
-    @Mod.EventHandler
-    public void onInit(FMLInitializationEvent event) {
-        PROXY.onInit();
-    }
-
-    @Mod.EventHandler
-    public void onPostInit(FMLPostInitializationEvent event) {
-        PROXY.onPostInit();
-    }
->>>>>>> parent of 9902da5f... why are there two build.gradle files?
 }
