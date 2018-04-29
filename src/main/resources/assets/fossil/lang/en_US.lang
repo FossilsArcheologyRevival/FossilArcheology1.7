@@ -637,3 +637,5 @@ pedia.egg.status=Status:
 pedia.egg.status.wet=Wet
 pedia.egg.status.warm=Warm
 pedia.egg.status.cold=Cold
+
+tc.aspect.Chronos=Time, Past, Present, Future
