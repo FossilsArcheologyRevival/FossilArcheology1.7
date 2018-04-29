@@ -9,6 +9,10 @@ buildscript {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
+		maven {
+			name = "CurseForge"
+			url = "https://minecraft.curseforge.com/api/maven/"		
+		}		
     }
     dependencies {
         classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
