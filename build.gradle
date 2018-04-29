@@ -9,7 +9,12 @@ buildscript {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
-    }
+	maven {
+	    name = "CurseForge"
+	     url = "https://minecraft.curseforge.com/api/maven/"		
+	    }
+	}
+	
     dependencies {
         classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
     }
@@ -40,6 +45,7 @@ repositories {
 
 dependencies {
     compile "net.ilexiconn:llibrary:1.7.9-1.12.2:dev"
+    compile "thaumcraft:Thaumcraft:1.12.2:6.1.BETA10"
 }
 
 processResources {
