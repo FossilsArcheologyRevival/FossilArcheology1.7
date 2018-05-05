@@ -45,7 +45,6 @@ public class Revival {
 
     @Mod.EventHandler
     public void onPreInit(FMLPreInitializationEvent event) {
-        RevivalAspectRegistry.register();
         PROXY.onPreInit();
     }
 
