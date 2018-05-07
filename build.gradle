@@ -40,10 +40,20 @@ repositories {
         name = "ilexiconn"
         url = "http://maven.mcmoddev.com"
     }
+    maven {
+        name = "Mobius Repo"
+        url = "http://tehnut.info/maven"
+    }	
+    maven {
+        name = "JEI"
+        url = "http://dvs1.progwml6.com/files/maven"
+    }	
 }
 
 dependencies {
     compile "net.ilexiconn:llibrary:1.7.9-1.12.2:dev"
+    deobfCompile "mcp.mobius.waila:Hwyla:$1.8.25-B40_1.12"	
+    runtime "mezz.jei:jei_$1.12.2:$4.9.1.175"	
 }
 
 processResources {
