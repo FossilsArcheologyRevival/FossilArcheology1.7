@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/henodus_cooked"
+    "layer0": "fossil:items/cooked_food/henodus_cooked"
   }
 }

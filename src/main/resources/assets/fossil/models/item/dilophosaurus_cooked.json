@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/dilophosaurus_cooked"
+    "layer0": "fossil:items/cooked_food/dilophosaurus_cooked"
   }
 }

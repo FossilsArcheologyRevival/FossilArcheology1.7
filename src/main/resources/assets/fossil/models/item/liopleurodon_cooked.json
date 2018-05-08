@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/liopleurodon_cooked"
+    "layer0": "fossil:items/cooked_food/liopleurodon_cooked"
   }
 }

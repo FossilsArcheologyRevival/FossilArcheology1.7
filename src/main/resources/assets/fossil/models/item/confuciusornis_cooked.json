@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/confuciusornis_cooked"
+    "layer0": "fossil:items/cooked_food/confuciusornis_cooked"
   }
 }

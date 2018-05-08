@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/mammoth_cooked"
+    "layer0": "fossil:items/cooked_food/mammoth_cooked"
   }
 }
