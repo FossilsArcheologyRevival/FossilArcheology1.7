@@ -114,5 +114,7 @@ public class FARecipeRegistry {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(FABlockRegistry.BUBBLE_MACHINE), "XYX", "YZY", "XYX", 'X', "nuggetGold", 'Y', "ingotGold", 'Z', Items.WATER_BUCKET));
 
     */
+        FAItemRegistry.ANCIENT_HELMET_MATERIAL.setRepairItem(new ItemStack(FAItemRegistry.SCARAB_GEM));
+        FAItemRegistry.SCARAB_MATERIAL.setRepairItem(new ItemStack(FAItemRegistry.SCARAB_GEM));
     }
 }

@@ -24,7 +24,7 @@ public class AncientSwordItem extends ItemSword implements DefaultRenderedItem {
         this.maxStackSize = 1;
         this.setMaxDamage(250);
         this.setCreativeTab(FATabRegistry.ITEMS);
-        this.setUnlocalizedName("ancientSword");
+        this.setUnlocalizedName("ancient_sword");
     }
 
     @Override

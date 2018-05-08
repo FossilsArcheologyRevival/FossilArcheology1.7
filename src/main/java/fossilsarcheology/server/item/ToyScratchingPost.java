@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 public class ToyScratchingPost extends Item implements DefaultRenderedItem {
 
     public ToyScratchingPost() {
-        this.setUnlocalizedName("toyscratchingpost");
+        this.setUnlocalizedName("toy_scratching_post");
         this.setCreativeTab(FATabRegistry.ITEMS);
     }
         public EnumActionResult onItemUse(EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {

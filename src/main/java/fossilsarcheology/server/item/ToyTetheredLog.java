@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 public class ToyTetheredLog extends Item implements DefaultRenderedItem {
 
     public ToyTetheredLog() {
-        this.setUnlocalizedName("toytetheredlog");
+        this.setUnlocalizedName("toy_tethered_log");
         this.setCreativeTab(FATabRegistry.ITEMS);
     }
 
