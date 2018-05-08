@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fossil:items/plants/fossil_seed_ephedra"
+  }
+}
