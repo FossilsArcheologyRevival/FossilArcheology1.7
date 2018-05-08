@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/brachiosaurus_cooked"
+    "layer0": "fossil:items/cooked_food/brachiosaurus_cooked"
   }
 }
