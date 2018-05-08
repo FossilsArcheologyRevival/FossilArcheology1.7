@@ -86,7 +86,7 @@ public class ClientProxy extends ServerProxy {
         }
 
         for(int i = 0; i < FossilSeedsItem.fossilSeeds.length; i++){
-            RENDER_HANDLER.registerItemRenderer(FAItemRegistry.FOSSIL_SEED, i, "fossilseed_" + FossilSeedsItem.fossilSeeds[i], "inventory");
+            RENDER_HANDLER.registerItemRenderer(FAItemRegistry.FOSSIL_SEED, i, "fossil_seed_" + FossilSeedsItem.fossilSeeds[i], "inventory");
             RENDER_HANDLER.registerItemRenderer(FAItemRegistry.SEED, i, "seed_" + FossilSeedsItem.fossilSeeds[i], "inventory");
         }
 

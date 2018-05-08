@@ -75,8 +75,8 @@ public class FAItemRegistry {
     public static final AncientHelmetItem ANCIENT_HELMET = new AncientHelmetItem();
     public static final BasicSwordItem ICED_MEAT = new BasicSwordItem(ICED_MEAT_MATERIAL, "iced_meat");
     public static final FossilSeedsItem FOSSIL_SEED = new FossilSeedsItem(true);
-    public static final BasicItem FOSSIL_SEED_FERN = new BasicItem("fossilseed_fern");
-    public static final BasicItem PALAE_SAPLING_FOSSIL = new BasicItem("fossilSapling_palae");
+    public static final BasicItem FOSSIL_SEED_FERN = new BasicItem("fossil_seed_fern");
+    public static final BasicItem PALAE_SAPLING_FOSSIL = new BasicItem("fossil_sapling_palae");
     public static final FossilSeedsItem SEED = new FossilSeedsItem(false);
     public static final FernSeedItem FERN_SEED = new FernSeedItem();
     public static final Item TAR_BUCKET = new ItemBucket(FABlockRegistry.TAR).setUnlocalizedName("tar_bucket").setContainerItem(Items.BUCKET).setCreativeTab(FATabRegistry.ITEMS);
