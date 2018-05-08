@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/egg/Egg_Cultivated_Kelenken"
+    "layer0": "fossil:items/egg/egg_cultivated_kelenken"
   }
 }
