@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/smilodon_cooked"
+    "layer0": "fossil:items/cooked_food/smilodon_cooked"
   }
 }

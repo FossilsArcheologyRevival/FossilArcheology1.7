@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/quagga_cooked"
+    "layer0": "fossil:items/cooked_food/quagga_cooked"
   }
 }
