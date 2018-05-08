@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/cookedFood/velociraptor_cooked"
+    "layer0": "fossil:items/cooked_food/velociraptor_cooked"
   }
 }
