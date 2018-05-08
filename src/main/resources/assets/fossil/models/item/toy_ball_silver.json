@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/toyBall_silver"
+    "layer0": "fossil:items/toy_ball_silver"
   }
 }

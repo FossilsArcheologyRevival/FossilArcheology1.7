@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fossil:items/fossilSapling_palae"
+    "layer0": "fossil:items/fossil_sapling_palae"
   }
 }
