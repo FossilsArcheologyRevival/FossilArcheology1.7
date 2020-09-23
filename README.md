@@ -1,6 +1,6 @@
 # Fossil and Archeology Revival
 
-For more information and news for this project, join us on Discord adn check us out on social media!
+For more information and news for this project, join us on Discord and check us out on social media!
 
 ## [Discord](https://discord.gg/zjDNeHC)
 
