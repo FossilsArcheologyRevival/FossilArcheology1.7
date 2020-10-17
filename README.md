@@ -85,4 +85,4 @@ Flammarilva's original code is open sourced and can be found here: [https://gith
 April 26, 2014 the Fossils and Archeology Revival was put under the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/). 
 The source is now home in a public organization found here: [https://github.com/FossilsArcheologyRevival](https://github.com/FossilsArcheologyRevival).
 
-You are free to add this to any modpack, or otherwise use it as long as it falls under the CC license.In return, we can only ask you to make your contributions to the project or the community.
+You are free to add this to any modpack , or otherwise use it as long as it falls under the CC license.In return, we can only ask you to make your contributions to the project or towards the community.
