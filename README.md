@@ -1,6 +1,6 @@
 # Fossil and Archeology Revival
 
-For more information and news for this project, join us on Discord and check us out on social media!
+For more information and news on this project, join us on Discord and check us out on social media !
 
 ## [Discord](https://discord.gg/zjDNeHC)
 
@@ -17,7 +17,7 @@ Forked from [Flammarilva](https://github.com/fls81245)'s Fossil And Archeology m
 
 ## Fossils and Archeology Revival Contributors
 
-###### Programmers  
+###### Programmers
 [Shadowbeast007](https://github.com/Shadowbeast)  
 [Microjunk](https://github.com/Microjunk)  
 [4f6f3b](https://github.com/4f6f3b)  
@@ -61,9 +61,9 @@ Al-Myr, SteveOriginal (Portuguese)
 Mirach (Polish)  
 
 ###### Special Thanks
-Flammarilva (original mod creator) and the rest of Team July
+Flammarilva (original mod creator) and the rest of Team July.
 
-The early Fossils Revival team (Shadowbeast007, Microjunk, Tyranno66, 4f6f3b)
+The early Fossils Revival team (Shadowbeast007, Microjunk, Tyranno66, 4f6f3b).
 
 
 
@@ -74,15 +74,15 @@ The early Fossils Revival team (Shadowbeast007, Microjunk, Tyranno66, 4f6f3b)
 
 
 ## Known Bugs
-For a comprehensive list of reported bugs, refer to the project issues page:
+To get a comprehensive list of reported bugs, refer to the project issues page:
 
 [https://github.com/FossilsArcheologyRevival/FossilArcheology1.7/issues?state=open](https://github.com/FossilsArcheologyRevival/FossilArcheology1.7/issues?state=open)
 
 
 ## Licence, Copyright, and Modpacks
-Flammarilva's original code is open source and can be found here: [https://github.com/fls81245/FossilArcheology](https://github.com/fls81245/FossilArcheology)
+Flammarilva's original code is open sourced and can be found here: [https://github.com/fls81245/FossilArcheology](https://github.com/fls81245/FossilArcheology)
 
 April 26, 2014 the Fossils and Archeology Revival was put under the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/). 
 The source is now home in a public organization found here: [https://github.com/FossilsArcheologyRevival](https://github.com/FossilsArcheologyRevival).
 
-You are free to add this to any modpack, or otherwise use it as long as it falls under the CC license. We can only ask that in return you contribute something back to the project or the community.
+You are free to add this to any modpack, or otherwise use it as long as it falls under the CC license.In return, we can only ask you to make your contributions to the project or the community.
